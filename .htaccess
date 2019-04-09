@@ -55,3 +55,7 @@ AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+# Hide git-related files for autogit
+# https://jlnostr.de/blog/better-workflow-with-kirby-and-git
+RedirectMatch 404 /\.git
