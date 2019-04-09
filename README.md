@@ -1,27 +1,9 @@
-# Kirby Starterkit
+# Monopolio
 
-Kirby is a file-based CMS.
-Easy to setup. Easy to use. Flexible as hell.
 
-## Trial
+## CMS
 
-You can try Kirby on your local machine or on a test
-server as long as you need to make sure it is the right
-tool for your next project.
-
-## Buy a license
-
-You can purchase your Kirby license at
-<https://getkirby.com/buy>
-
-A Kirby license is valid for a single domain. You can find
-Kirby's license agreement here: <https://getkirby.com/license>
-
-## The Starterkit
-
-Kirby's Starterkit comes with a small demo website and a fully
-configured panel. Feel free to modify it and play with it as
-much as you like.
+The Monopolio site runs on Kirby, a file-based CMS. Learn more at [getkirby.com](https://getkirby.com).
 
 ## The Panel
 
@@ -43,40 +25,13 @@ copied to your server correctly**
 
 Kirby runs on PHP 7.1+, Apache or Nginx.
 
-### Download
-
-You can download the latest version of the Starterkit
-from https://download.getkirby.com
-
-### With Git
-
-If you are familiar with Git, you can clone Kirby's
-Starterkit repository from Github.
-
-    git clone https://github.com/getkirby/starterkit.git
-
-## Documentation
-
-<https://getkirby.com/docs>
-
 ## Issues
 
 If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
+directly on Github: <https://github.com/theadamparker/monopolio/issues>
 
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
+Otherwise you can send an email: <adam@theadamparker.com>
 
 ## Copyright
 
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>
+© 2019 Adam Parker
