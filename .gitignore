@@ -9,3 +9,8 @@ Icon
 
 .sass-cache/
 *.css.map
+
+# NPM
+# ------------
+
+node_modules
