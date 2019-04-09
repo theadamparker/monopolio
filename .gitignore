@@ -14,3 +14,9 @@ Icon
 # ------------
 
 node_modules
+
+# Kirby
+# ------------
+
+media
+**.sess

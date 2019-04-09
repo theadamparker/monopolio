@@ -48,21 +48,21 @@ module.exports = function(grunt) {
           }
         },
 
-        // postcss: {
-        //   options: {
-        //     // map: true,
-        //     map: false,
-        //     processors: [
-        //       require('autoprefixer')({
-        //           browsers: ['last 3 versions']
-        //       }),
-        //       require('cssnano')() // minify the result
-        //     ]
-        //   },
-        //   dist: {
-        //     src: 'assets/css/screen.css'
-        //   }
-        // },
+        postcss: {
+          options: {
+            // map: true,
+            map: false,
+            processors: [
+              require('autoprefixer')({
+                  browsers: ['last 3 versions']
+              }),
+              require('cssnano')() // minify the result
+            ]
+          },
+          dist: {
+            src: 'assets/css/screen.css'
+          }
+        },
 
         modernizr: {
           dist: {
@@ -106,6 +106,6 @@ module.exports = function(grunt) {
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'php', 'open', 'watch']);
 
-    grunt.task.run('notify_hooks');
+    // grunt.task.run('notify_hooks');
 
 };
