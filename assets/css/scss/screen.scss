@@ -107,23 +107,6 @@ $extraLarge-width: 1600px;
 }
 
 /***********************/
-/****** STRUCTURE ******/
-/***********************/
-
-section {
-  min-height: 400px;
-  padding-left: $sitePad;
-  padding-right: $sitePad;
-}
-
-.section--photoBG {
-  background-size: cover;
-  background-color: red;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/***********************/
 /****** TYPOGRAPHY *****/
 /***********************/
 
@@ -134,8 +117,10 @@ body {
 h1 {
   font-size: 30px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 
   .section--photoBG & {
     color: $white;
@@ -152,6 +137,38 @@ p {
 }
 
 /***********************/
+/****** STRUCTURE ******/
+/***********************/
+
+section {
+  min-height: 500px;
+  padding-left: $sitePad;
+  padding-right: $sitePad;
+}
+
+.section--photoBG {
+  background-size: cover;
+  background-color: red;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.textWrap {
+  padding: 30px;
+  text-align: center;
+}
+
+.textWrap--fixed {
+  width: 500px
+}
+
+.textWrap--half {
+  width: 50%
+}
+
+/***********************/
 /****** NAVIGATION *****/
 /***********************/
 
@@ -162,13 +179,23 @@ p {
   transform: translate(-50%,50%);
   width: 100px;
   color: red;
+
+  @include mobile {
+    left: $sitePad;
+    bottom: auto;
+    transform: none;
+    width: 70px;
+  }
 }
 
 .header {
   background: $teal;
   height: 80px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: $sitePad;
+  z-index: 10;
 
   @include mobile {
     background: red;
