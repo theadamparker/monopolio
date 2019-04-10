@@ -119,6 +119,8 @@ section {
 .section--photoBG {
   background-size: cover;
   background-color: red;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /***********************/
@@ -134,7 +136,7 @@ h1 {
   line-height: 1;
   font-weight: 700;
   margin-bottom: 20px;
-  
+
   .section--photoBG & {
     color: $white;
   }
