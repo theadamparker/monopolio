@@ -17,7 +17,7 @@
     <header class="header">
       <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
 
-      <nav id="menu" class="menu">
+      <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
         <?= $item->title()->link() ?>
         <?php endforeach ?>

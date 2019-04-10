@@ -15,6 +15,6 @@ function initMap() {
 		center: myMapCenter,
 		zoom: 14
 	});
-}
 
-console.log('storeFinder.js loaded')
+  console.log('storeFinder.js loaded')
+}

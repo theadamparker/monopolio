@@ -1,29 +1,9 @@
-<?php snippet('header') ?>
+<?php 
 
-<main>
-  <header class="intro">
-    <h1><?= $site->title() ?></h1>
-  </header>
+snippet('header');
 
-  <ul class="grid">
-    <?php foreach (page('photography')->children()->listed() as $album): ?>
-    <li>
-      <a href="<?= $album->url() ?>">
-        <figure>
-          <?php if ($cover = $album->cover()): ?>
-          <?= $cover->resize(1024, 1024) ?>
-          <?php endif ?>
-          <figcaption>
-            <span>
-              <span class="example-name"><?= $album->title() ?></span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-    <?php endforeach ?>
-  </ul>
+foreach($pages->listed() as $section) {
+  snippet($section->uid(), ['data' => $section]);
+}
 
-</main>
-
-<?php snippet('footer') ?>
+snippet('footer');

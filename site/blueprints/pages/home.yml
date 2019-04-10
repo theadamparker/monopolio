@@ -4,15 +4,19 @@ icon: 🏠
 options:
   status: false
 
-sections:
-  info:
-    headline: Info
-    type: info
-    text: All content for the homepage is being pulled from the photography page.
-
-  photography:
-    headline: Photography
-    extends: sections/albums
-    status: listed
-
-
+fields:
+  pageSettings:
+    label: Homepage Content
+    type: headline
+  section1:
+    label: Section 1 Headline
+    type: text
+  Section1Content:
+    label: Content
+    type: textarea
+  section2:
+    label: Section 2 Headline
+    type: text
+  Section2Content:
+    label: Content
+    type: textarea
