@@ -7,8 +7,8 @@ return [
 // Autogit Settings
 // https://github.com/pedroborges/kirby-autogit
 
-// c::set('autogit',                true);
-c::set('autogit',                false);
+c::set('autogit',                true);
+// c::set('autogit',                false);
 c::set('autogit.remote.name',    'origin');
 c::set('autogit.remote.branch',  'master');
 
