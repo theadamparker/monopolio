@@ -7,7 +7,6 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    // 'assets/js/build/modernizr.js',
                     'assets/js/global/*.js', // All JS in the global folder
                     // 'assets/js/global/ga.js',
                 ],
@@ -50,7 +49,6 @@ module.exports = function(grunt) {
 
         postcss: {
           options: {
-            // map: true,
             map: false,
             processors: [
               require('autoprefixer')({
@@ -80,10 +78,9 @@ module.exports = function(grunt) {
 
         watch: {
             files: ['Gruntfile.js'],
-            tasks: ['jshint'],
             scripts: {
                 files: ['assets/js/*.js', 'assets/js/global/global.js'],
-                tasks: ['concat', 'uglify', 'jshint'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
                 },

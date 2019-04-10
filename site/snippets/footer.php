@@ -11,6 +11,7 @@
     </nav>
     <?php endif ?>
   </footer>
+  <?php echo js('assets/js/build/global.min.js') ?>
 
 </body>
 </html>

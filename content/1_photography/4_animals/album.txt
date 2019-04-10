@@ -1,0 +1,19 @@
+Title: Animals
+
+----
+
+Cover: 
+
+- peter-fox.jpg
+
+----
+
+Headline: Animals as leaders. Editing headline.
+
+----
+
+Description: What does the fox say?
+
+----
+
+Tags: animals
