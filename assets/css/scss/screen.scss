@@ -155,6 +155,19 @@ section {
   align-items: center;
 }
 
+.section--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-3-6 {
+  grid-column: span 3;
+}
+
+.grid-2-6 {
+  grid-column: span 2;
+}
+
 .textWrap {
   padding: 30px;
   text-align: center;
@@ -166,6 +179,10 @@ section {
 
 .textWrap--half {
   width: 50%
+}
+
+.photoModule {
+  object-fit: cover;
 }
 
 /***********************/
