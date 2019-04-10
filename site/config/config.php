@@ -9,7 +9,8 @@ return [
 
 c::set('autogit',                true);
 // c::set('autogit',                false);
-c::set('autogit.remote.name',    'origin');
+// c::set('autogit.remote.name',    'origin');
+c::set('autogit.remote.name',    'https://github.com/theadamparker/monopolio.git');
 c::set('autogit.remote.branch',  'master');
 
 c::set('autogit.webhook.secret', 'randomStringMonopolioAlphabet');
