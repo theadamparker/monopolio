@@ -1,5 +1,3 @@
-// global scripts
-
 // Google maps API Key
 // AIzaSyDoIvLsfzYmLQKGrNs0XxF_MCRBj61kG7I
 
@@ -15,6 +13,6 @@ function initMap() {
 		center: myMapCenter,
 		zoom: 14
 	});
-}
 
-console.log('storeFinder.js loaded')
+  console.log('storeFinder.js loaded')
+}
