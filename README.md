@@ -5,13 +5,6 @@
 
 The Monopolio site runs on Kirby, a file-based CMS. Learn more at [getkirby.com](https://getkirby.com).
 
-## The Panel
-
-You can find the login for Kirby's admin interface at
-http://yourdomain.com/panel. You will be guided through the signup
-process for your first user, when you visit the panel
-for the first time.
-
 ## Installation
 
 Kirby does not require a database, which makes it very easy to
