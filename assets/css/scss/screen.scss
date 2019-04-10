@@ -1,8 +1,153 @@
 /***********************/
+/******** RESET ********/
+/***********************/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// AP ADDITIONS
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/***********************/
 /****** VARIABLES ******/
 /***********************/
 
-$blue: blue;
+$teal: #11abc2;
+$red: red;
+$white: #fff;
+
+$sitePad: 20px;
+
+/***********************/
+/**** MEDIA QUERIES ****/
+/***********************/
+
+$mobile-width: 600px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$extraLarge-width: 1600px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media (min-width: #{$extraLarge-width}) {
+    @content;
+  }
+}
+
+/***********************/
+/****** STRUCTURE ******/
+/***********************/
+
+section {
+  min-height: 400px;
+  padding-left: $sitePad;
+  padding-right: $sitePad;
+}
+
+.section--photoBG {
+  background-size: cover;
+  background-color: red;
+}
+
+/***********************/
+/****** TYPOGRAPHY *****/
+/***********************/
+
+body {
+  font-family: 'Georgia', serif;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  
+  .section--photoBG & {
+    color: $white;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+
+  .section--photoBG & {
+    color: $white;
+  }
+}
 
 /***********************/
 /****** NAVIGATION *****/
@@ -10,15 +155,22 @@ $blue: blue;
 
 .logo {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
+  transform: translate(-50%,50%);
+  width: 100px;
   color: red;
 }
 
 .header {
-  background: $blue;
-  height: 100px;
+  background: $teal;
+  height: 80px;
   position: relative;
+  padding: $sitePad;
+
+  @include mobile {
+    background: red;
+  }
 }
 
 .mainNav {

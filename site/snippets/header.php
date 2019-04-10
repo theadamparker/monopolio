@@ -14,7 +14,9 @@
 
   <div class="page">
     <header class="header">
-      <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
+      <a class="logo" href="<?= $site->url() ?>">
+        <img src="/assets/img/logo.png" alt="<?= $site->title() ?>" />
+      </a>
 
       <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
