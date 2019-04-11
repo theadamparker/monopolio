@@ -188,6 +188,10 @@ section {
   }
 }
 
+.product {
+  flex: 1;
+}
+
 .textWrap {
   padding: 30px;
   text-align: center;
@@ -235,7 +239,7 @@ section {
   z-index: 10;
 
   @include mobile {
-    
+
   }
 }
 
