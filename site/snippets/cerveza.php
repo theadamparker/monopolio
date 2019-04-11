@@ -11,15 +11,11 @@
       <?= $data->text()->kirbytext() ?>
     </div>
 
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
+    <?php foreach($data->images() as $image): ?>
+    <figure class="col-2-6">
+      <img src="<?= $image->url() ?>" alt="">
+    </figure>
+    <?php endforeach ?>
 
     <div class="textWrap col-3-6 row-2">
       <?= $data->text2()->kirbytext() ?>
