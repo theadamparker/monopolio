@@ -2,4 +2,12 @@ Title: Our Heritage
 
 ----
 
+Headline: Adventure
+
+----
+
+Text: 1) Adventure. In the 1860’s a Frenchman journeys to St Louis, Missouri to master his skills as a brewer. During the Civil War he travels south to Mexico, where a chance meeting with a Mexican farmer from San Luis Potosi leads to the founding of the Cerveceria de San Luis, a grand brewery and proud symbol of the advancements of the time.
+
+----
+
 Content: Heritage content here

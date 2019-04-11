@@ -1,0 +1,9 @@
+title: Homepage
+icon: 📔
+
+sections:
+  parts:
+    headline: Parts
+    type: pages
+    status: all
+    image: false
