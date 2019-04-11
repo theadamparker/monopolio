@@ -70,6 +70,8 @@ img {
 $teal: #11abc2;
 $red: red;
 $white: #fff;
+$offWhite: #FFFEEB; // used in nav text
+$coral: #BF935F; // used for headings and body copy
 
 $sitePad: 20px;
 
@@ -112,10 +114,11 @@ $extraLarge-width: 1600px;
 
 body {
   font-family: 'Georgia', serif;
+	color: $coral;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1;
   font-weight: 500;
   margin-bottom: 20px;
@@ -125,6 +128,16 @@ h1 {
   .section--photoBG & {
     color: $white;
   }
+}
+
+h2 {
+	font-size: 25px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+	color: $teal;
 }
 
 p {
@@ -190,6 +203,11 @@ section {
 
 .product {
   flex: 1;
+	text-align: center;
+
+	> img {
+		margin: 0 auto;
+	}
 }
 
 .textWrap {
@@ -237,6 +255,7 @@ section {
   width: 100%;
   padding: $sitePad;
   z-index: 10;
+	border-bottom: 5px solid $coral;
 
   @include mobile {
 

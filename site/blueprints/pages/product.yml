@@ -1,0 +1,7 @@
+title: Product
+icon: 🍺
+
+fields:
+  starters:
+    extends: fields/beers
+    label: Starters
