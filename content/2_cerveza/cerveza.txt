@@ -6,5 +6,4 @@ Text: In the beginning’ all cervecerias brewed locally, and with quality ingre
 
 ----
 
-Text2: We follow two guiding principles at the Cerveceria de San Luis; honor our heritage and always strive to produce the finest quality cervezas possible. We are equally obsessed with our heritage as with brewing superior beer. We carefully select and proudly work with some of the the best breweries in the world to produce our lagers, and to share with you
-‘the way it was in the beginning.’
+Text2: We follow two guiding principles at the Cerveceria de San Luis; honor our heritage and always strive to produce the finest quality cervezas possible. We are equally obsessed with our heritage as with brewing superior beer. We carefully select and proudly work with some of the the best breweries in the world to produce our lagers, and to share with you ‘the way it was in the beginning.’

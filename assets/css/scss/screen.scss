@@ -159,6 +159,12 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 200px;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .col-3-6 {
@@ -176,6 +182,10 @@ section {
 .products {
   display: flex;
   justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .textWrap {
@@ -225,7 +235,7 @@ section {
   z-index: 10;
 
   @include mobile {
-    background: red;
+    
   }
 }
 

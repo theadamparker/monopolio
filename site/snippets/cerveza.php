@@ -22,7 +22,7 @@
     </div>
 
     <div class="textWrap col-3-6 row-2">
-      <?= $data->text()->kirbytext() ?>
+      <?= $data->text2()->kirbytext() ?>
     </div>
 
     <?php if($image = $data->image()): ?>
@@ -47,7 +47,11 @@
 
     <?php foreach($data->children()->listed() as $product): ?>
       <div class="product">
-        <?= $product->title() ?>
+        <h2><?= $product->title() ?></h2>
+        <?= $product->text()->kirbytext() ?>
+        <?= $product->hopVariety()->kirbytext() ?>
+        <?= $product->ABV()->kirbytext() ?>
+        <?= $product->IBU()->kirbytext() ?>
       </div>
     <?php endforeach ?>
 
