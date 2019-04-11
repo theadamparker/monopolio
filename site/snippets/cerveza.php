@@ -47,6 +47,11 @@
 
     <?php foreach($data->children()->listed() as $product): ?>
       <div class="product">
+        <?php if($image = $product->image()): ?>
+        <figure class="">
+          <img src="<?= $image->url() ?>" alt="" />
+        </figure>
+        <?php endif ?>
         <h2><?= $product->title() ?></h2>
         <?= $product->text()->kirbytext() ?>
         <?= $product->hopVariety()->kirbytext() ?>
