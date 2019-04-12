@@ -1,0 +1,18 @@
+Title: Lager Negra
+
+----
+
+Name: Lager Negra
+
+----
+
+Description: A crisp and crushable Mexican blonde lager first brewed to quench the thirst of the hard working mining community of San Luis. Balanced, light body, and slightly sweet coming from a mix of pilsner malt and maiz grain. 100% natural ingredients.
+
+----
+
+Stats:
+
+-
+  hops: Hops here
+  abv: 6
+  ibu: 40

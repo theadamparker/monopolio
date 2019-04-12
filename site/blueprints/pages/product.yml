@@ -1,7 +1,15 @@
 title: Product
 icon: 🍺
+preset: page
 
 fields:
-  starters:
+  name:
+    label: Beer Name
+    type: text
+  description:
+    label: Beer Description
+    type: textarea
+    size: small
+  stats:
     extends: fields/beers
-    label: Starters
+    label: Beer Stats

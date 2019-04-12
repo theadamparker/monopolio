@@ -180,6 +180,10 @@ section {
   }
 }
 
+.section--grid figure {
+	overflow: hidden;
+}
+
 .col-3-6 {
   grid-column: span 3;
 }
@@ -191,6 +195,7 @@ section {
 .row-2 {
   grid-row: span 2;
 }
+
 
 .products {
   display: flex;

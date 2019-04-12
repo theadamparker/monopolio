@@ -120,6 +120,9 @@ section {
       display: flex;
       flex-direction: column; } }
 
+.section--grid figure {
+  overflow: hidden; }
+
 .col-3-6 {
   grid-column: span 3; }
 
