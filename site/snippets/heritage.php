@@ -26,6 +26,7 @@
     <?php endforeach ?>
 
     <div class="textWrap col-3-6 row-2">
+      <h1><?= $data->headline2() ?></h1>
       <?= $data->text2()->kirbytext() ?>
     </div>
 

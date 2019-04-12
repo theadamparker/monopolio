@@ -23,6 +23,9 @@ fields:
     type: files
     headline: Gallery
     template: image
+  headline2:
+    label: Headline
+    type: text
   text2:
     label: Text
     type: textarea
