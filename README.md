@@ -1,6 +1,17 @@
 # Monopolio
 
 
+## Photo Styles
+The site uses a few primary photo layouts that can be managed differently.
+- *Featured photo*: This spans half of the page, and sits beside a section headline and intro.
+- *Gallery photo*: This is one-third of a page, and sits below a featured photo.
+
+These are referenced in preset `srcset` definitions, and can be used like this:
+```
+$image->srcset('featuredPhoto');
+$image->srcset('galleryPhoto');
+```
+
 ## CMS
 
 The Monopolio site runs on Kirby, a file-based CMS. Learn more at [getkirby.com](https://getkirby.com).

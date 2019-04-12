@@ -1,7 +1,15 @@
 <?php
 
 return [
-    'debug' => true
+    'debug' => true,
+    // https://getkirby.com/docs/reference/objects/file/srcset
+    'thumbs' => [
+      'srcsets' => [
+        'default' => [300, 600, 900, 1200],
+        'featuredPhoto' => [300, 600, 900, 1200],
+        'galleryPhoto' => [300, 600, 900],
+      ]
+    ]
 ];
 
 // Autogit Settings
