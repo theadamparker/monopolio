@@ -1,9 +1,8 @@
 <section id="cerveza-de-verdad" class="">
   <div class="section--grid">
-    <?php if($image = $data->cover()): ?>
+    <?php if($image = $data->cover()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <img src="<?= $image->url() ?>" alt="" />
-      <?= $image->url() ?>
+      <?= $image ?>
     </figure>
     <?php endif ?>
 
@@ -22,7 +21,7 @@
       <?= $data->text2()->kirbytext() ?>
     </div>
 
-    <?php if($image = $data->cover2()): ?>
+    <?php if($image = $data->cover2()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
       <img src="<?= $image->url() ?>" alt="" />
     </figure>
