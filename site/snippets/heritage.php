@@ -1,45 +1,53 @@
 <section id="our-heritage">
   <div class="section--grid">
-    <?php if($image = $data->image()): ?>
+    <?php if($image = $data->cover()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <img src="<?= $image->url() ?>" alt="" />
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endif ?>
 
     <div class="textWrap col-3-6 row-2">
-      <h1><?= $data->title() ?></h1>
-      <?= $data->text()->kirbytext() ?>
+      <h1><?= $data->headline() ?></h1>
+      <?= $data->text1()->kirbytext() ?>
     </div>
 
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
+    <?php foreach($data->gallery()->toFiles() as $image): ?>
+    <figure class="col-2-6">
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
+    </figure>
+    <?php endforeach ?>
 
     <div class="textWrap col-3-6 row-2">
-      Text
+      <?= $data->text2()->kirbytext() ?>
     </div>
 
-    <?php if($image = $data->image()): ?>
+    <?php if($image = $data->cover2()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <img src="<?= $image->url() ?>" alt="" />
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endif ?>
 
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
+    <?php foreach($data->gallery2()->toFiles() as $image): ?>
+    <figure class="col-2-6">
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
+    </figure>
+    <?php endforeach ?>
 
   </div>
 </section>
