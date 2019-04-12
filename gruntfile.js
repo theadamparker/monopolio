@@ -21,20 +21,20 @@ module.exports = function(grunt) {
             }
         },
 
-        php: {
-            dist: {
-                options: {
-                    port: 4000
-                }
-            }
-        },
+        // php: {
+        //     dist: {
+        //         options: {
+        //             port: 4000
+        //         }
+        //     }
+        // },
 
-        open : {
-            dev : {
-                path: 'http://localhost:4000/',
-                app: 'Google Chrome'
-            }
-        },
+        // open : {
+        //     dev : {
+        //         path: 'http://localhost:4000/',
+        //         app: 'Google Chrome'
+        //     }
+        // },
 
         sass: {
           dist: {
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'php', 'open', 'watch']);
+    grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'watch']);
 
     // grunt.task.run('notify_hooks');
 

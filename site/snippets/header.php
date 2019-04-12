@@ -15,7 +15,7 @@
   <div class="page">
     <header class="header">
       <a class="logo" href="<?= $site->url() ?>">
-        <img src="/assets/img/logo.png" alt="<?= $site->title() ?>" />
+        <img src="<?= $site->url() ?>/assets/img/mono-logo.png" alt="<?= $site->title() ?>" />
       </a>
 
       <nav id="mainNav" class="mainNav">

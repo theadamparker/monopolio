@@ -1,7 +1,7 @@
 # redirect to https
 # https://www.godaddy.com/help/redirect-http-to-https-automatically-8828
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Kirby .htaccess
 

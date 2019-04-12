@@ -18,8 +18,7 @@ Cover:
 
 Gallery: 
 
-- >
-  screen-shot-2019-04-10-at-10.47.46-pm.png
+- gallery-cerveza-de-barril.jpg
 - >
   screen-shot-2019-04-10-at-10.47.52-pm.png
 - test-old-photo.png
