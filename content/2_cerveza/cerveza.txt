@@ -12,16 +12,15 @@ Text1: In the beginning’ all cervecerias brewed locally, and with quality ingr
 
 Cover: 
 
-- test-old-photo.png
+- mono-feature1.jpg
 
 ----
 
 Gallery: 
 
-- gallery-cerveza-de-barril.jpg
-- >
-  screen-shot-2019-04-10-at-10.47.52-pm.png
-- test-old-photo.png
+- mono-gallery-1.jpg
+- mono-gallery-2.jpg
+- mono-gallery-3.jpg
 
 ----
 
@@ -31,19 +30,15 @@ Text2: We follow two guiding principles at the Cerveceria de San Luis; honor our
 
 Cover2: 
 
-- >
-  screen-shot-2019-04-10-at-10.47.52-pm.png
+- mono-feature-brewery.jpg
 
 ----
 
 Gallery2: 
 
-- >
-  screen-shot-2019-04-10-at-10.47.46-pm.png
-- >
-  screen-shot-2019-04-10-at-10.47.52-pm.png
-- >
-  screen-shot-2019-04-10-at-10.47.58-pm.png
+- mono-gallery-brewery1.jpg
+- mono-gallery-brewery2.jpg
+- mono-gallery-brewery3.jpg
 
 ----
 
