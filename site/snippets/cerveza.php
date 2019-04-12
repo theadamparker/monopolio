@@ -12,9 +12,9 @@
       <?= $data->text1()->kirbytext() ?>
     </div>
 
-    <?php foreach($data->images() as $image): ?>
+    <?php foreach($data->gallery()->toFiles() as $image): ?>
     <figure class="col-2-6">
-      <img src="<?= $image->url() ?>" alt="">
+      <?= $image ?>
     </figure>
     <?php endforeach ?>
 
@@ -28,15 +28,11 @@
     </figure>
     <?php endif ?>
 
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
-    <div class="col-2-6">
-      PHOTO
-    </div>
+    <?php foreach($data->gallery2()->toFiles() as $image): ?>
+    <figure class="col-2-6">
+      <?= $image ?>
+    </figure>
+    <?php endforeach ?>
 
   </div>
 

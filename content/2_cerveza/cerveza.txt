@@ -22,8 +22,7 @@ Gallery:
   screen-shot-2019-04-10-at-10.47.46-pm.png
 - >
   screen-shot-2019-04-10-at-10.47.52-pm.png
-- >
-  screen-shot-2019-04-10-at-10.47.58-pm.png
+- test-old-photo.png
 
 ----
 
