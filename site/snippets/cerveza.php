@@ -2,7 +2,11 @@
   <div class="section--grid">
     <?php if($image = $data->cover()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <?= $image->crop(660, 400) ?>
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endif ?>
 
@@ -13,7 +17,11 @@
 
     <?php foreach($data->gallery()->toFiles() as $image): ?>
     <figure class="col-2-6">
-      <?= $image->crop(440, 200); ?>
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endforeach ?>
 
@@ -23,13 +31,21 @@
 
     <?php if($image = $data->cover2()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <?= $image->crop(660, 400) ?>
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endif ?>
 
     <?php foreach($data->gallery2()->toFiles() as $image): ?>
     <figure class="col-2-6">
-      <?= $image->crop(440, 200); ?>
+      <img
+      src="<?= $image->url()?>"
+      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      alt="<?= $image->alt()?>"
+      />
     </figure>
     <?php endforeach ?>
 
