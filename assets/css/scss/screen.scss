@@ -157,13 +157,16 @@ section {
   min-height: 650px;
   padding-left: $sitePad;
   padding-right: $sitePad;
+
+	@include extraLarge {
+		min-height: 850px;
+	}
 }
 
 .section--photoBG {
   background-size: cover;
   background-color: red;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: 50% 50%;
   display: flex;
   align-items: center;
 }
@@ -175,6 +178,10 @@ section {
   align-items: center;
 	width: calc(100% + #{$sitePad}*2);
 	margin-left: -#{$sitePad};
+
+	@include extraLarge {
+		grid-auto-rows: 330px;
+	}
 
   @include mobile {
     display: flex;
