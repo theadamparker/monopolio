@@ -2,7 +2,7 @@
   <div class="section--grid">
     <?php if($image = $data->cover()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <?= $image ?>
+      <?= $image->crop(660, 400) ?>
     </figure>
     <?php endif ?>
 
@@ -13,7 +13,7 @@
 
     <?php foreach($data->gallery()->toFiles() as $image): ?>
     <figure class="col-2-6">
-      <?= $image ?>
+      <?= $image->crop(440, 200); ?>
     </figure>
     <?php endforeach ?>
 
@@ -23,13 +23,13 @@
 
     <?php if($image = $data->cover2()->toFile()): ?>
     <figure class="col-3-6 row-2 photoModule">
-      <img src="<?= $image->url() ?>" alt="" />
+      <?= $image->crop(660, 400) ?>
     </figure>
     <?php endif ?>
 
     <?php foreach($data->gallery2()->toFiles() as $image): ?>
     <figure class="col-2-6">
-      <?= $image ?>
+      <?= $image->crop(440, 200); ?>
     </figure>
     <?php endforeach ?>
 
