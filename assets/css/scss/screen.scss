@@ -173,6 +173,8 @@ section {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 270px;
   align-items: center;
+	width: calc(100% + #{$sitePad}*2);
+	margin-left: -#{$sitePad};
 
   @include mobile {
     display: flex;
