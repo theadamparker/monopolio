@@ -49,6 +49,55 @@ Gallery2:
 
 ----
 
+Cover3: 
+
+- mono-feature-parade.jpg
+
+----
+
+Headline3: Revolutionaries
+
+----
+
+Text3: The Revolutionaries fighting in the desert climate of San Luis fueled bravado and quenched thirst with Monopolio. One excerpt from El Estandarte in 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
+
+----
+
+Gallery3: 
+
+- mono-gallery-carriage.jpg
+- mono-gallery-team-wide.jpg
+
+----
+
+Headline4: Baseball
+
+----
+
+Text4: The Monopolio Baseball team paraded through town towards the brewery’s own stadium ever Sunday on a horse-drawn carriage marked with the factory CSL emblem. The Monopolio flag leading the way.
+
+----
+
+Cover4: 
+
+- mono-feature-stadium.jpg
+
+----
+
+Cover5: 
+
+- mono-feature-bottling.jpg
+
+----
+
+Headline5: Bottling
+
+----
+
+Text5: The cerveceria only hired women to bottle the beer, men couldn’t be trusted
+
+----
+
 Text: Adventure. In the 1860’s a Frenchman journeys to St Louis, Missouri to master his skills as a brewer. During the Civil War he travels south to Mexico, where a chance meeting with a Mexican farmer from San Luis Potosi leads to the founding of the Cerveceria de San Luis, a grand brewery and proud symbol of the advancements of the time.
 
 ----
