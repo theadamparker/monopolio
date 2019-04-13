@@ -148,6 +148,11 @@ p {
   .section--photoBG & {
     color: $white;
   }
+
+	.productDescription & {
+		font-size: 14px;
+		line-height: 1.5;
+	}
 }
 
 .footerTagline {
@@ -171,6 +176,24 @@ sup {
 	font-size: 50%;
 	border-bottom: 2px solid;
 	padding-bottom: 2px;
+}
+
+.beerNumbers__label {
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: left;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.beerNumbers__content {
+	font-size: 30px;
+}
+
+.hops {
+	font-size: 26px;
+	margin-bottom: 20px;
+	text-align: left;
 }
 
 /***********************/
@@ -213,6 +236,11 @@ section {
   }
 }
 
+.section--grid.section--grid8 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 120px;
+}
+
 .section--grid figure {
 	overflow: hidden;
 	height: 100%;
@@ -233,6 +261,10 @@ section {
   grid-column: span 2;
 }
 
+.col-2-8 {
+	grid-column: span 2;
+}
+
 .row-2 {
   grid-row: span 2;
 }
@@ -250,10 +282,18 @@ section {
 .product {
   flex: 1;
 	text-align: center;
+	margin: 0 10px;
 
 	> img {
 		margin: 0 auto;
 	}
+}
+
+.beerNumbers {
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+	align-items: start;
 }
 
 .textWrap {
@@ -275,6 +315,8 @@ section {
 
 .where-to-buy {
 	background: $offWhite;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 footer {
@@ -363,7 +405,7 @@ footer {
 
 .searchPanel__row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -371,12 +413,19 @@ footer {
 .searchPanel__button {
 	padding: 10px;
 	border: 2px solid $brown;
+	margin: 10px;
+
+	&:hover {
+		background: $lightBrown;
+	}
 }
 
 input,
 select {
 	width: 100%;
 	font-size: 15px;
+	text-transform: uppercase;
+	appearance: none;
 }
 
 input {
@@ -384,11 +433,23 @@ input {
 	border: 2px solid $brown;
 	padding: 10px;
 	color: $brown;
-	text-transform: uppercase;
+
 
 	&::placeholder {
 		color: $brown;
 	}
+}
+
+select {
+	background: $brown;
+	color: $offWhite;
+	border-radius: 0;
+	padding: 10px;
+}
+
+option {
+	border-radius: 0;
+	padding: 10px;
 }
 
 .mapPanel {
@@ -403,6 +464,20 @@ input {
 /***********************/
 /**** MISCELLANEOUS ****/
 /***********************/
+
+.separator--top {
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+
+.separator--vertical {
+	width: 13px;
+	margin-top: 12px;
+}
+
+.separator--bottom {
+	margin-top: 30px;
+}
 
 .sealBG {
 	background: url('../img/mono-seal-half.jpg') no-repeat;

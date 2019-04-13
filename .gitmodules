@@ -1,3 +1,9 @@
 [submodule "site/plugins/autogit"]
 	path = site/plugins/autogit
 	url = https://github.com/pedroborges/kirby-autogit.git
+[submodule "site/plugins/site/plugins/kirby3-instagram"]
+	path = site/plugins/site/plugins/kirby3-instagram
+	url = https://github.com/bnomei/kirby3-instagram.git
+[submodule "site/plugins/kirby3-instagram"]
+	path = site/plugins/kirby3-instagram
+	url = https://github.com/bnomei/kirby3-instagram.git
