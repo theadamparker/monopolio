@@ -1,0 +1,29 @@
+title: Age Verification
+icon: 🐣
+preset: page
+files: false
+
+fields:
+  headline:
+    label: Headline
+    type: text
+  text1:
+    label: Text
+    type: textarea
+    size: small
+  cover:
+    type: files
+    headline: Cover
+    layout: cards
+    info: "{{ file.dimensions }}"
+    template: cover
+    min: 1
+    max: 3
+  textPlate:
+    type: files
+    headline: Text Plate
+    layout: cards
+    info: "{{ file.dimensions }}"
+    template: cover
+    min: 1
+    max: 3

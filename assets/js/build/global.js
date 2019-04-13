@@ -1,5 +1,9 @@
 // global scripts
 
+$('#over21').click(function() {
+  $('.ageOverlay').fadeOut();
+})
+
 // Google maps API Key
 // AIzaSyDoIvLsfzYmLQKGrNs0XxF_MCRBj61kG7I
 
