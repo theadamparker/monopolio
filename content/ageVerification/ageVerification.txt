@@ -2,24 +2,20 @@ Title: Age Verification
 
 ----
 
-Headline: 
+Headline:
 
 ----
 
-Text1: 
+Text: Are you over 21?
 
 ----
 
-Cover: 
+cover:
 
 - age-verify-photo.jpg
 
 ----
 
-Textplate: 
+textPlate:
 
 - mono-lockup.png
-
-----
-
-Text: Are you over 21?
