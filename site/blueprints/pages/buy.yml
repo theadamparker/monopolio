@@ -1,0 +1,10 @@
+title: Product
+icon: 🍺
+preset: page
+files: false
+pages: false
+
+fields:
+  stats:
+    extends: fields/beerLocations
+    label: Beer Locations

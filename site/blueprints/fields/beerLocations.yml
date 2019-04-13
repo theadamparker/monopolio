@@ -1,0 +1,28 @@
+label: Locations
+type: structure
+
+fields:
+  name:
+    label: Location Name
+    type: text
+    width: 2/3
+  phone:
+    label: Phone
+    type: tel
+    width: 1/3
+  locationType:
+    label: Type of Location
+    width: 1/2
+    type: radio
+    default: false
+    options:
+      restaurant: Restaurant/Bar
+      store: Store
+  products:
+    label: Available Products
+    width: 1/2
+    type: checkboxes
+    options:
+      lagarClara: Lagar Clara
+      lagarNegra: Lagar Negra
+      unaSanLuis: Una San Luis
