@@ -2,7 +2,7 @@ Title: La Cerveza de Verdad
 
 ----
 
-Headline: La Cerveza de Verdad
+Headline: La Cerveza <sup>de</sup> Verdad
 
 ----
 

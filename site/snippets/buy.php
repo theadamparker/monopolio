@@ -1,4 +1,35 @@
-<section id="where-to-buy">
-  <h1><?= $data->title() ?></h1>
-  <?= $data->text()->kirbytext() ?>
+<section id="where-to-buy" class="where-to-buy">
+  <div class="beerFinder">
+    <div class="searchPanel">
+      <div class="searchPanel__row">
+        <input type="text" placeholder="Enter your zip code" />
+      </div>
+      <div class="searchPanel__row">
+        <div class="searchPanel__button">
+          Restaurant/Bar
+        </div>
+        <div class="searchPanel__button">
+          Store
+        </div>
+      </div>
+      <div class="searchPanel__row">
+        <select>
+          <option value="">Item</option>
+          <option value="">Item</option>
+          <option value="">Item</option>
+        </select>
+      </div>
+      <div class="searchPanel__row">
+        <div class="searchPanel__button">
+          Bottles
+        </div>
+        <div class="searchPanel__button">
+          Cans
+        </div>
+      </div>
+    </div>
+    <div class="mapPanel">
+      Map goes over here
+    </div>
+  </div>
 </section>

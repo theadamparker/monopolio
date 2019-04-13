@@ -51,7 +51,7 @@
 
   </div>
 
-  <div class="products">
+  <div class="products sealBG">
 
     <?php foreach($data->children()->listed() as $product): ?>
       <div class="product">

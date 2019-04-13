@@ -68,10 +68,10 @@ img {
 /***********************/
 
 $teal: #11abc2;
-$red: red;
 $white: #fff;
 $offWhite: #FFFEEB; // used in nav text
-$coral: #BF935F; // used for headings and body copy
+$lightBrown: #DCBF8B;
+$brown: #BF935F; // used for headings and body copy
 
 $sitePad: 20px;
 
@@ -114,7 +114,7 @@ $extraLarge-width: 1600px;
 
 body {
   font-family: 'Georgia', serif;
-	color: $coral;
+	color: $brown;
 }
 
 h1 {
@@ -127,6 +127,7 @@ h1 {
 
   .section--photoBG & {
     color: $white;
+		text-shadow: 2px 2px 5px rgba(0,0,0,.3);
   }
 }
 
@@ -149,8 +150,27 @@ p {
   }
 }
 
+.footerTagline {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: $white;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	color: $white;
+	text-transform: uppercase;
+}
+
 strong {
 	font-weight: 700;
+}
+
+sup {
+	vertical-align: super;
+	font-size: 50%;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
 }
 
 /***********************/
@@ -253,6 +273,17 @@ section {
   object-fit: cover;
 }
 
+.where-to-buy {
+	background: $offWhite;
+}
+
+footer {
+	background: $teal;
+	width: 100%;
+	padding: 40px $sitePad;
+	text-align: center;
+}
+
 /***********************/
 /****** NAVIGATION *****/
 /***********************/
@@ -262,7 +293,7 @@ section {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%,50%);
-  width: 100px;
+  width: 90px;
   color: red;
 
   @include mobile {
@@ -275,13 +306,13 @@ section {
 
 .header {
   background: $teal;
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: $sitePad;
+  padding: 10px $sitePad;
   z-index: 10;
-	border-bottom: 5px solid $coral;
+	border-bottom: 5px solid $brown;
 
   @include mobile {
 
@@ -291,5 +322,90 @@ section {
 .mainNav {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+	margin-top: 10px;
+
+	a {
+		text-transform: uppercase;
+		transition: .2s all ease;
+
+		&:link,
+		&:active,
+		&:visited {
+			text-decoration: none;
+			color: $offWhite;
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+/***********************/
+/***** BEER FINDER *****/
+/***********************/
+
+.beerFinder {
+	display: flex;
+	justify-content: space-between;
+
+	@include mobile {
+		flex-direction: column;
+	}
+}
+
+.searchPanel {
+	padding: $sitePad;
+	min-width: 350px;
+	flex: 1;
+}
+
+.searchPanel__row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.searchPanel__button {
+	padding: 10px;
+	border: 2px solid $brown;
+}
+
+input,
+select {
+	width: 100%;
+	font-size: 15px;
+}
+
+input {
+	background: $offWhite;
+	border: 2px solid $brown;
+	padding: 10px;
+	color: $brown;
+	text-transform: uppercase;
+
+	&::placeholder {
+		color: $brown;
+	}
+}
+
+.mapPanel {
+	background: $brown;
+	flex: 2;
+
+	@include tablet {
+		flex: 1;
+	}
+}
+
+/***********************/
+/**** MISCELLANEOUS ****/
+/***********************/
+
+.sealBG {
+	background: url('../img/mono-seal-half.jpg') no-repeat;
+	background-size: contain;
+  background-position: right center;
 }

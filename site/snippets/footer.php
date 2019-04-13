@@ -1,7 +1,8 @@
   </div>
 
   <footer class="footer">
-    <a href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
+    <div class="footerTagline">Siempre local. Siempre fresca.</div>
+    <div class="copyright">&copy;<?= date('Y') ?> La Cerveceria de San Luis LLC, USA</div>
 
     <?php if ($about = page('about')): ?>
     <nav class="social">
