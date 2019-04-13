@@ -7,19 +7,21 @@
         'count' => 8
     ];
     $force = false;
-    foreach(site()->instagram($token, $endpoint, $params, $force) as $data) {
-    ?>
-    <?php
-    ?>
-    <figure class="col-2-8 row-2">
-    <?php
-        echo Kirby\Toolkit\Html::img(
-            $data['images']['standard_resolution']['url']
-        );
-    ?>
-    </figure>
-    <?php
-    }
+    if(site()->instagram($token, $endpoint, $params, $force)):
+      foreach(site()->instagram($token, $endpoint, $params, $force) as $data) {
+      ?>
+      <?php
+      ?>
+      <figure class="col-2-8 row-2">
+      <?php
+          echo Kirby\Toolkit\Html::img(
+              $data['images']['standard_resolution']['url']
+          );
+      ?>
+      </figure>
+      <?php
+      }
+    endif;
 ?>
 </div>
 
