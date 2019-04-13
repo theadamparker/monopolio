@@ -106,5 +106,4 @@
     </div>
 
   </div>
-  <?php snippet('instagram') ?>
 </section>
