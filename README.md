@@ -1,5 +1,10 @@
 # Monopolio
 
+Note: This is an active project, and the readme file is still a work in progress.
+
+## Development
+
+This site uses [Grunt](https://gruntjs.com) as a Javascript task runner for writing Sass, concatenating, and minifying. After cloning the repo, make sure to `npm install --save-dev` to install dependencies. Then run `grunt` to output CSS and JS to the linked, minified files.
 
 ## Photo Styles
 The site uses a few primary photo layouts that can be managed differently.
@@ -14,16 +19,7 @@ $image->srcset('galleryPhoto');
 
 ## CMS
 
-The Monopolio site runs on Kirby, a file-based CMS. Learn more at [getkirby.com](https://getkirby.com).
-
-## Installation
-
-Kirby does not require a database, which makes it very easy to
-install. Just copy Kirby's files to your server and visit the
-URL for your website in the browser.
-
-**Please check if the invisible .htaccess file has been
-copied to your server correctly**
+The Monopolio site runs on Kirby, a file-based CMS. Learn more at [getkirby.com](https://getkirby.com). Kirby does not require a database, which makes it very easy to install. Just clone this repo to your server and visit the URL for your website in the browser.
 
 ### Requirements
 
