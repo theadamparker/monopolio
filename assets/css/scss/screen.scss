@@ -74,6 +74,7 @@ $lightBrown: #DCBF8B;
 $brown: #BF935F; // used for headings and body copy
 
 $sitePad: 20px;
+$maxWidth: 1300px;
 
 /***********************/
 /**** MEDIA QUERIES ****/
@@ -209,11 +210,11 @@ sup {
 /***********************/
 
 body {
-	background: $lightBrown;
+	background: $offWhite;
 }
 
 .page {
-	max-width: 1300px;
+	max-width: $maxWidth;
 	margin: 0 auto;
 	background: $white;
 }
@@ -372,6 +373,7 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
+	max-width: $maxWidth;
   padding: 10px $sitePad;
   z-index: 10;
 	border-bottom: 5px solid $brown;
@@ -429,8 +431,26 @@ footer {
 	}
 }
 
+.beerFinder__tabs {
+	display: flex;
+}
+
+.beerFinder__tab {
+	border: 2px solid $brown;
+	width: 50%;
+	text-align: center;
+	padding: 20px;
+	font-size: 22px;
+	margin: 0 auto 40px;
+
+	&.active {
+		background: $brown;
+		color: $offWhite;
+	}
+}
+
 .searchPanel {
-	padding: $sitePad;
+	padding: 0 $sitePad $sitePad;
 	min-width: 350px;
 	flex: 1;
 }
@@ -450,6 +470,17 @@ footer {
 	&:hover {
 		background: $lightBrown;
 	}
+}
+
+.searchbar {
+	display: flex;
+	align-items: center;
+}
+
+.zipSearchButton {
+	padding: 13px;
+	color: $white;
+	background: $brown;
 }
 
 input,
