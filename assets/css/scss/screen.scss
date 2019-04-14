@@ -208,6 +208,16 @@ sup {
 /****** STRUCTURE ******/
 /***********************/
 
+body {
+	background: $lightBrown;
+}
+
+.page {
+	max-width: 1300px;
+	margin: 0 auto;
+	background: $white;
+}
+
 section {
   min-height: 650px;
   padding-left: $sitePad;
