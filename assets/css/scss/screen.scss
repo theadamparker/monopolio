@@ -336,6 +336,7 @@ section {
 	background: $offWhite;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	min-height: 0;
 }
 
 footer {
@@ -388,7 +389,17 @@ footer {
 
 	a {
 		text-transform: uppercase;
-		transition: .2s all ease;
+		transition: .3s all ease;
+
+		&.active {
+			border-bottom: 2px solid $white;
+
+			&:link,
+			&:active,
+			&:visited {
+				color: $white;
+			}
+		}
 
 		&:link,
 		&:active,
@@ -402,6 +413,8 @@ footer {
 		}
 	}
 }
+
+
 
 /***********************/
 /***** BEER FINDER *****/

@@ -6,17 +6,21 @@ Headline: La Cerveza <sup>de</sup> Verdad
 
 ----
 
+sectionID: cerveza-de-verdad
+
+----
+
 Text1: In the beginning’ all cervecerias brewed locally, and with quality ingredients. Beer was enjoyed fresh and foamy in tap rooms and across the towns. Patrons conversed on the streets and in the plazas, cheering with mugs filled with crisp local lagers
 
 ----
 
-Cover: 
+Cover:
 
 - mono-feature1.jpg
 
 ----
 
-Gallery: 
+Gallery:
 
 - mono-gallery-1.jpg
 - mono-gallery-2.jpg
@@ -28,13 +32,13 @@ Text2: We follow two guiding principles at the Cerveceria de San Luis; honor our
 
 ----
 
-Cover2: 
+Cover2:
 
 - mono-feature-brewery.jpg
 
 ----
 
-Gallery2: 
+Gallery2:
 
 - mono-gallery-brewery1.jpg
 - mono-gallery-brewery2.jpg
@@ -46,4 +50,4 @@ Text: In the beginning’ all cervecerias brewed locally, and with quality ingre
 
 ----
 
-Characteristics: 
+Characteristics:

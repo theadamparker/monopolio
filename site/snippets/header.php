@@ -20,7 +20,9 @@
 
       <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
-        <?= $item->title()->link() ?>
+        <a href="#<?= $item->sectionID() ?>">
+          <?= $item->title() ?>
+        </a>
         <?php endforeach ?>
       </nav>
     </header>

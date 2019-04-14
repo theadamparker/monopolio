@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         watch: {
             files: ['Gruntfile.js'],
             scripts: {
-                files: ['assets/js/*.js', 'assets/js/global/global.js'],
+                files: ['assets/js/*.js', 'assets/js/global/*.js', 'assets/js/global/global.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,

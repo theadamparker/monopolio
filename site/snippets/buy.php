@@ -1,6 +1,6 @@
 <section id="where-to-buy" class="where-to-buy">
   <div class="beerFinder">
-    <div class="searchPanel">
+    <form class="searchPanel">
       <div class="searchPanel__row">
         <input type="text" placeholder="Enter your zip code" />
       </div>
@@ -27,9 +27,7 @@
           Cans
         </div>
       </div>
-    </div>
-    <div class="mapPanel">
-      Map goes over here
-    </div>
+    </form>
+    <div class="mapPanel" id="map"></div>
   </div>
 </section>

@@ -2,4 +2,8 @@ Title: Where to Buy
 
 ----
 
+sectionID: where-to-buy
+
+----
+
 Content: Where to buy content here
