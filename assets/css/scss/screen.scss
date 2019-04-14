@@ -446,9 +446,11 @@ footer {
 	border: 2px solid $brown;
 	width: 50%;
 	text-align: center;
+	text-transform: uppercase;
 	padding: 20px;
 	font-size: 22px;
 	margin: 0 auto 40px;
+	cursor: pointer;
 
 	&.active {
 		background: $brown;
@@ -473,9 +475,17 @@ footer {
 	padding: 10px;
 	border: 2px solid $brown;
 	margin: 10px;
+	transition: .3s all ease;
+	text-transform: uppercase;
+	cursor: pointer;
 
 	&:hover {
 		background: $lightBrown;
+	}
+
+	&.active {
+		color: $white;
+		background: $brown;
 	}
 }
 
@@ -488,6 +498,7 @@ footer {
 	padding: 13px;
 	color: $white;
 	background: $brown;
+	cursor: pointer;
 }
 
 input,
@@ -522,13 +533,24 @@ option {
 	padding: 10px;
 }
 
-.mapPanel {
-	background: $brown;
+.mapPanel,
+.listPanel {
 	flex: 2;
 
 	@include tablet {
 		flex: 1;
 	}
+}
+
+.mapPanel {
+	background: $brown;
+	@include mobile {
+		min-height: 400px;
+	}
+}
+
+.listPanel {
+	display: none;
 }
 
 /***********************/

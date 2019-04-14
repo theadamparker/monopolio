@@ -1,0 +1,26 @@
+{
+  "123": {
+    "name": "Tacombi",
+    "location": {
+        "geo": {
+          "lat": "40.7239902",
+          "lng": "-73.9966187"
+        },
+        "address": {
+          "number": "123",
+          "street": "Elizabeth Street",
+          "city": "New York"
+        }
+    },
+    "type": "restaurant",
+    "products": {
+        "cans": "true",
+        "bottles": "true",
+        "beerTypes": {
+          "lagerClara": "True",
+          "lagerNegra": "False",
+          "unaSanLuis": "True"
+        }
+    }
+  }
+}

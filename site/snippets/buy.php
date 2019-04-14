@@ -2,12 +2,8 @@
   <div class="beerFinder">
     <div class="searchPanel">
       <div class="beerFinder__tabs">
-        <div class="beerFinder__tab active">
-          Map
-        </div>
-        <div class="beerFinder__tab">
-          List
-        </div>
+        <div class="beerFinder__tab active">Map</div>
+        <div class="beerFinder__tab">List</div>
       </div>
       <form class="searchForm">
         <div class="searchPanel__row searchbar">
@@ -39,5 +35,7 @@
       </form>
     </div>
     <div class="mapPanel" id="map"></div>
+    <div class="listPanel">
+    </div>
   </div>
 </section>
