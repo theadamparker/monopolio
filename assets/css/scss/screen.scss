@@ -341,7 +341,7 @@ section {
 }
 
 footer {
-	background: $teal;
+	background: url(../img/pattern-bg.jpg) repeat $teal;
 	width: 100%;
 	padding: 40px $sitePad;
 	text-align: center;
@@ -358,17 +358,19 @@ footer {
   transform: translate(-50%,50%);
   width: 90px;
   color: red;
+	transition: .5s all ease;
 
   @include mobile {
-    left: $sitePad;
+    // left: $sitePad;
+		top: 4px;
     bottom: auto;
-    transform: none;
+    transform: translateX(-50%);
     width: 70px;
   }
 }
 
 .header {
-  background: $teal;
+	background: url(../img/pattern-bg.jpg) repeat $teal;
   height: 60px;
   position: fixed;
   top: 0;
@@ -377,9 +379,10 @@ footer {
   padding: 10px $sitePad;
   z-index: 10;
 	border-bottom: 5px solid $brown;
+	transition: .5s all ease;
 
   @include mobile {
-
+		height: 30px;
   }
 }
 
@@ -388,6 +391,10 @@ footer {
   width: 100%;
   justify-content: space-around;
 	margin-top: 10px;
+
+	@include mobile {
+		display: none;
+	}
 
 	a {
 		text-transform: uppercase;
