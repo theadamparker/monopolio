@@ -125,6 +125,7 @@ h1 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+	hyphens: auto;
 
   .section--photoBG & {
     color: $white;
@@ -250,8 +251,11 @@ section {
 	}
 
   @include mobile {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+		grid-template-columns: 1fr 1fr 1fr;
+	  grid-auto-rows: 230px;
+
   }
 }
 
@@ -274,10 +278,18 @@ section {
 
 .col-3-6 {
   grid-column: span 3;
+
+	@include mobile {
+		// grid-column: span 3;
+	}
 }
 
 .col-2-6 {
   grid-column: span 2;
+
+	@include mobile {
+		grid-column: span 1;
+	}
 }
 
 .col-2-8 {
@@ -292,6 +304,8 @@ section {
 .products {
   display: flex;
   justify-content: space-between;
+	width: calc(100% + #{$sitePad}*2);
+	margin-left: calc(-#{$sitePad}); // note I use calc here so browsers that don't support calc() won't apply the negative margin
 
   @include mobile {
     flex-direction: column;
@@ -303,8 +317,9 @@ section {
 	text-align: center;
 	margin: 0 10px;
 
-	> img {
+	img {
 		margin: 0 auto;
+		mix-blend-mode: multiply; // TODO change this once we have PNG images
 	}
 }
 
@@ -319,6 +334,11 @@ section {
 .textWrap {
   padding: 30px;
   text-align: center;
+
+	@include mobile {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .textWrap--fixed {
@@ -462,6 +482,10 @@ footer {
 	padding: 0 $sitePad $sitePad;
 	min-width: 350px;
 	flex: 1;
+
+	@include mobile {
+		min-width: 0;
+	}
 }
 
 .searchPanel__row {
@@ -641,4 +665,7 @@ option {
 	background: url('../img/mono-seal-half.jpg') no-repeat;
 	background-size: contain;
   background-position: right center;
+	background-color: $offWhite;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
 }

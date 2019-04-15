@@ -93,16 +93,6 @@ $('.searchPanel__button').click(function() {
   getSearch();
 });
 
-// begin vue app
-
-// var app = new Vue({
-//   el: '#app',
-//   data: {
-//     message: 'Hello Vue!'
-//   }
-//
-// });
-
 var searchParameters = {
   "zip": "10012",
   "restaurant": "true",
