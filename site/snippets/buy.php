@@ -1,34 +1,34 @@
 <section id="where-to-buy" class="where-to-buy">
-  <div class="beerFinder">
+  <div class="beerFinder" id="app">
     <div class="searchPanel">
       <div class="beerFinder__tabs">
-        <div class="beerFinder__tab active">Map</div>
-        <div class="beerFinder__tab">List</div>
+        <div class="beerFinder__tab active" id="tab__map">Map</div>
+        <div class="beerFinder__tab" id="tab__list">List</div>
       </div>
       <form class="searchForm">
         <div class="searchPanel__row searchbar">
-          <input type="text" placeholder="Enter your zip code" /><i class="fas fa-search zipSearchButton"></i>
+          <input type="text" placeholder="Enter your zip code" id="zip" /><i class="fas fa-search zipSearchButton"></i>
         </div>
         <div class="searchPanel__row">
-          <div class="searchPanel__button">
+          <div class="searchPanel__button active" id="restaurant">
             Restaurant/Bar
           </div>
-          <div class="searchPanel__button">
+          <div class="searchPanel__button active" id="store">
             Store
           </div>
         </div>
         <div class="searchPanel__row">
           <select>
-            <option value="">Lagar Clara</option>
-            <option value="">Lagar Negra</option>
-            <option value="">Una San Luis</option>
+            <option value="lagarClara">Lagar Clara</option>
+            <option value="lagarNegra">Lagar Negra</option>
+            <option value="unaSanLuis">Una San Luis</option>
           </select>
         </div>
         <div class="searchPanel__row">
-          <div class="searchPanel__button">
+          <div class="searchPanel__button active" id="bottles">
             Bottles
           </div>
-          <div class="searchPanel__button">
+          <div class="searchPanel__button active" id="cans">
             Cans
           </div>
         </div>

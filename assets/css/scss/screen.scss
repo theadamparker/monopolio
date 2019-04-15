@@ -479,10 +479,6 @@ footer {
 	text-transform: uppercase;
 	cursor: pointer;
 
-	&:hover {
-		background: $lightBrown;
-	}
-
 	&.active {
 		color: $white;
 		background: $brown;
