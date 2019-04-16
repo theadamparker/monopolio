@@ -4,7 +4,7 @@
     <figure class="col-3-6 row-2 photoModule">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      srcset="<?= $image->srcset() ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -19,7 +19,11 @@
     <figure class="col-2-6">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      srcset="<?php echo $image->resize(200)->url()?> 300w,
+      <?php echo $image->resize(300)->url()?> 600w,
+      <?php echo $image->resize(300)->url()?> 900w,
+      <?php echo $image->resize(400)->url()?> 1200w,
+      <?php echo $image->resize(500)->url()?> 1500w"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -33,7 +37,7 @@
     <figure class="col-3-6 row-2 photoModule">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      srcset="<?= $image->srcset() ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -43,7 +47,11 @@
     <figure class="col-2-6">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset('galleryPhoto') ?>"
+      srcset="<?php echo $image->resize(200)->url()?> 300w,
+      <?php echo $image->resize(300)->url()?> 600w,
+      <?php echo $image->resize(300)->url()?> 900w,
+      <?php echo $image->resize(400)->url()?> 1200w,
+      <?php echo $image->resize(500)->url()?> 1500w"
       alt="<?= $image->alt()?>"
       />
     </figure>
