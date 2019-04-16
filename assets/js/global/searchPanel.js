@@ -17,8 +17,15 @@ $('.searchPanel__button').click(function() {
   getSearch();
 });
 
+$('.zipSearchButton').click(function() {
+  getSearch();
+  updateMap();
+});
+
 var searchParameters = {
   "zip": "10012",
+  "zipLat": "",
+  "zipLng": "",
   "restaurant": "true",
   "store": "true",
   "lagarClara": "true",
@@ -27,12 +34,6 @@ var searchParameters = {
   "bottles": "true",
   "cans": true
 };
-
-// update everything in the map
-// make sure the search panel parameters are reflected in the map
-function updateMap() {
-
-}
 
 // get the status of a button
 function buttonValue(el) {
@@ -57,8 +58,23 @@ function getSearch() {
   searchParameters["bottles"] = bottles;
   searchParameters["cans"] = cans;
 
-  console.log("Restaurant: " + searchParameters["restaurant"]);
-  console.log("Store: " + searchParameters["store"]);
-  console.log("Bottles: " + searchParameters["bottles"]);
-  console.log("Cans: " + searchParameters["cans"]);
+  zipGeocode(zip);
+}
+
+function zipGeocode(zip) {
+  $.getJSON( 'https://maps.googleapis.com/maps/api/geocode/json?address=' + zip + '&key=AIzaSyDoIvLsfzYmLQKGrNs0XxF_MCRBj61kG7I', function( data ) {
+      searchParameters["zipLat"] = data.results[0].geometry.location.lat;
+      searchParameters["zipLng"] = data.results[0].geometry.location.lng;
+  });
+}
+
+function moveToLocation(){
+  var center = new google.maps.LatLng(searchParameters.zipLat, searchParameters.zipLng);
+  map.panTo(center);
+}
+
+// update everything in the map
+// make sure the search panel parameters are reflected in the map
+function updateMap() {
+  moveToLocation()
 }
