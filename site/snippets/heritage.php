@@ -11,7 +11,7 @@
     <?php endif ?>
 
     <div class="textWrap col-3-6 row-2">
-      <h1><?= $data->headline() ?></h1>
+      <h1><?= $data->headline1() ?></h1>
       <?= $data->text1()->kirbytext() ?>
     </div>
 

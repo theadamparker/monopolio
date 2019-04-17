@@ -4,7 +4,7 @@ preset: page
 files: false
 
 fields:
-  headline:
+  headline1:
     label: Headline
     type: text
   text1:

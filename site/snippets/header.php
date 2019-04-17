@@ -22,7 +22,11 @@
       <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
         <a href="#<?= $item->sectionID() ?>">
-          <?= $item->title() ?>
+          <?php if ($item->headline() != '') {
+            echo $item->headline();
+          } else {
+            echo $item->title();
+          } ?>
         </a>
         <?php endforeach ?>
       </nav>
