@@ -2,7 +2,7 @@
   <?= $image->url() ?>
 <?php endif ?>')">
   <div class="textWrap textWrap--fixed">
-    <h1><?= $data->title() ?></h1>
+    <h1><?= $data->headline() ?></h1>
     <?= $data->text()->kirbytext() ?>
   </div>
 </section>

@@ -1,0 +1,53 @@
+Title: La Cerveza de Verdad
+
+----
+
+Headline: La Cerveza <sup>de</sup> Verdad
+
+----
+
+Sectionid: cerveza-de-verdad
+
+----
+
+Text1: Al principio ’todas las cervecerías elaboradas localmente, y con ingredientes de calidad. La cerveza se disfrutaba fresca y espumosa en las habitaciones del grifo y en las ciudades. Los clientes conversaban en las calles y en las plazas, animando con tazas llenas de lager locales.
+
+----
+
+Cover: 
+
+- mono-feature1.jpg
+
+----
+
+Gallery: 
+
+- mono-gallery-1.jpg
+- mono-gallery-2.jpg
+- mono-gallery-3.jpg
+
+----
+
+Text2: Seguimos dos principios rectores en la Cervecería de San Luis; honre nuestra herencia y siempre procure producir las mejores cervezas de calidad posible. Estamos igualmente obsesionados con nuestra herencia como con la elaboración de cerveza superior. Seleccionamos cuidadosamente y trabajamos con orgullo con algunas de las mejores fábricas de cerveza del mundo para producir nuestras cervezas y para compartir con ustedes "tal como era al principio".
+
+----
+
+Cover2: 
+
+- mono-feature-brewery.jpg
+
+----
+
+Gallery2: 
+
+- mono-gallery-brewery1.jpg
+- mono-gallery-brewery2.jpg
+- mono-gallery-brewery3.jpg
+
+----
+
+Text: In the beginning’ all cervecerias brewed locally, and with quality ingredients. Beer was enjoyed fresh and foamy in tap rooms and across the towns. Patrons conversed on the streets and in the plazas, cheering with mugs filled with crisp local lagers
+
+----
+
+Characteristics: 

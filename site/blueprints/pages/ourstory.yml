@@ -1,0 +1,10 @@
+title: Our Story
+preset: page
+fields:
+  headline:
+    label: Headline
+    type: text
+  text:
+    label: Text
+    type: textarea
+    size: large

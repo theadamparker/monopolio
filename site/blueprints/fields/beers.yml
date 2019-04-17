@@ -10,7 +10,9 @@ fields:
     type: number
     after: %
     width: 1/3
+    translate: false
   IBU:
     label: IBU
     type: number
     width: 1/3
+    translate: false

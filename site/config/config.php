@@ -9,7 +9,9 @@ return [
         'featuredPhoto' => [300, 600, 900, 1200],
         'galleryPhoto' => [300, 600, 900],
       ]
-    ]
+    ],
+    'languages' => true,
+    'languages.detect' => true
 ];
 
 // Autogit Settings

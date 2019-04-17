@@ -12,17 +12,9 @@ fields:
     type: textarea
     size: small
   cover:
-    type: files
-    headline: Cover
-    layout: cards
-    info: "{{ file.dimensions }}"
-    template: cover
-    min: 1
-    max: 3
+    extends: fields/cover
   gallery:
-    type: files
-    headline: Gallery
-    template: image
+    extends: fields/gallery
   headline2:
     label: Headline
     type: text
@@ -31,25 +23,11 @@ fields:
     type: textarea
     size: small
   cover2:
-    type: files
-    headline: Cover
-    layout: cards
-    info: "{{ file.dimensions }}"
-    template: cover
-    min: 1
-    max: 3
+    extends: fields/cover
   gallery2:
-    type: files
-    headline: Gallery
-    template: image
+    extends: fields/gallery
   cover3:
-    type: files
-    headline: Cover
-    layout: cards
-    info: "{{ file.dimensions }}"
-    template: cover
-    min: 1
-    max: 3
+    extends: fields/cover
   headline3:
     label: Headline
     type: text
@@ -58,9 +36,7 @@ fields:
     type: textarea
     size: small
   gallery3:
-    type: files
-    headline: Gallery
-    template: image
+    extends: fields/gallery
   headline4:
     label: Headline
     type: text
@@ -69,13 +45,7 @@ fields:
     type: textarea
     size: small
   cover4:
-    type: files
-    headline: Cover
-    layout: cards
-    info: "{{ file.dimensions }}"
-    template: cover
-    min: 1
-    max: 3
+    extends: fields/cover
   headline4:
     label: Headline
     type: text
@@ -84,13 +54,7 @@ fields:
     type: textarea
     size: small
   cover5:
-    type: files
-    headline: Cover
-    layout: cards
-    info: "{{ file.dimensions }}"
-    template: cover
-    min: 1
-    max: 3
+    extends: fields/cover
   headline5:
     label: Headline
     type: text
