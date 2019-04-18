@@ -76,6 +76,9 @@ $brown: #BF935F; // used for headings and body copy
 $sitePad: 20px;
 $maxWidth: 1300px;
 
+$serif: 'Morion', 'Georgia', serif;
+
+
 /***********************/
 /**** MEDIA QUERIES ****/
 /***********************/
@@ -113,8 +116,30 @@ $extraLarge-width: 1600px;
 /****** TYPOGRAPHY *****/
 /***********************/
 
+@font-face {
+  font-family: 'Morion';
+  src: url('../fonts/MorionRegular.eot');
+  src: url('../fonts/MorionRegular.eot') format('embedded-opentype'),
+       url('../fonts/MorionRegular.woff2') format('woff2'),
+       url('../fonts/MorionRegular.woff') format('woff'),
+       url('../fonts/MorionRegular.ttf') format('truetype'),
+       url('../fonts/MorionRegular.svg#MorionRegular') format('svg');
+   font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Morion';
+  src: url('../fonts/MorionBold.eot');
+  src: url('../fonts/MorionBold.eot') format('embedded-opentype'),
+       url('../fonts/MorionBold.woff2') format('woff2'),
+       url('../fonts/MorionBold.woff') format('woff'),
+       url('../fonts/MorionBold.ttf') format('truetype'),
+       url('../fonts/MorionBold.svg#MorionBold') format('svg');
+   font-weight: 700;
+}
+
 body {
-  font-family: 'Georgia', serif;
+  font-family: $serif;
 	color: $brown;
 }
 
