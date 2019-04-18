@@ -9,7 +9,7 @@ $page = $site->page('ageVerification');
     <?php if($image = $page->textPlate()->toFile()): ?>
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset('featuredPhoto') ?>"
+      srcset="<?= $image->srcset() ?>"
       alt="<?= $image->alt()?>"
       />
     <?php endif ?>
@@ -27,7 +27,7 @@ $page = $site->page('ageVerification');
   <figure class="ageOverlay__photo">
     <img
     src="<?= $image->url()?>"
-    srcset="<?= $image->srcset('featuredPhoto') ?>"
+    srcset="<?= $image->srcset() ?>"
     alt="<?= $image->alt()?>"
     />
   </figure>
