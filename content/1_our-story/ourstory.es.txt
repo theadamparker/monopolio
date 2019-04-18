@@ -1,8 +1,16 @@
-Title: Nuestra Historia
+Title: Our Story
 
 ----
 
 Headline: Nuestra Historia
+
+----
+
+sectionID: historia
+
+----
+
+navTitle: Historia
 
 ----
 

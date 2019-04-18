@@ -15,6 +15,15 @@
 
   <div class="page">
     <header class="header">
+      <ul class="languageSelect">
+        <?php foreach($kirby->languages() as $language): ?>
+        <li<?php e($kirby->language() == $language, ' class="active"') ?>>
+          <a href="<?php echo $language->url() ?>">
+            <?php echo html($language->locale()) ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+      </ul>
       <a class="logo" href="<?= $site->url() ?>">
         <img src="<?= $site->url() ?>/assets/img/mono-logo.png" alt="<?= $site->title() ?>" />
       </a>
@@ -22,12 +31,13 @@
       <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
         <a href="#<?= $item->sectionID() ?>">
-          <?php if ($item->headline() != '') {
-            echo $item->headline();
-          } else {
-            echo $item->title();
-          } ?>
+          <?= $item->navTitle() ?>
+
         </a>
         <?php endforeach ?>
       </nav>
+      <ul class="socialMedia">
+        <li>Icon</li>
+        <li>Icon</li>
+      </ul>
     </header>

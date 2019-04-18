@@ -1,4 +1,4 @@
-<section id="our-story" class="section--photoBG" style="background-image: url('<?php if($image = $data->image()): ?>
+<section id="<?= $data->sectionID() ?>" class="section--photoBG" style="background-image: url('<?php if($image = $data->image()): ?>
   <?= $image->url() ?>
 <?php endif ?>')">
   <div class="textWrap textWrap--fixed">

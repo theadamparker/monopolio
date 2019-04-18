@@ -1,6 +1,6 @@
 <?php
 
-$page = $site->page('ageVerification');
+$page = $site->page('ageverification');
 
 ?>
 <div class="ageOverlay">

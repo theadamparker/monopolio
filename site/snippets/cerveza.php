@@ -1,7 +1,10 @@
-<section id="cerveza-de-verdad" class="">
+<section id="<?= $data->sectionID() ?>" class="">
+  <div class="sectionHeader">
+    <h1><?= $data->title() ?></h1>
+  </div>
   <div class="section--grid">
     <?php if($image = $data->cover()->toFile()): ?>
-    <figure class="col-3-6 row-2 photoModule">
+    <figure class="featuredImage photoModule">
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
@@ -10,13 +13,13 @@
     </figure>
     <?php endif ?>
 
-    <div class="textWrap col-3-6 row-2">
+    <div class="textModule">
       <h1><?= $data->headline() ?></h1>
       <?= $data->text1()->kirbytext() ?>
     </div>
 
     <?php foreach($data->gallery()->toFiles() as $image): ?>
-    <figure class="col-2-6">
+    <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
       srcset="<?php echo $image->resize(200)->url()?> 300w,
@@ -29,12 +32,12 @@
     </figure>
     <?php endforeach ?>
 
-    <div class="textWrap col-3-6 row-2">
+    <div class="textModule">
       <?= $data->text2()->kirbytext() ?>
     </div>
 
     <?php if($image = $data->cover2()->toFile()): ?>
-    <figure class="col-3-6 row-2 photoModule">
+    <figure class="featuredImage photoModule">
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
@@ -44,7 +47,7 @@
     <?php endif ?>
 
     <?php foreach($data->gallery2()->toFiles() as $image): ?>
-    <figure class="col-2-6">
+    <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
       srcset="<?php echo $image->resize(200)->url()?> 300w,

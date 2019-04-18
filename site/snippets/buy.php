@@ -1,4 +1,7 @@
-<section id="where-to-buy" class="where-to-buy">
+<section id="<?= $data->sectionID() ?>" class="where-to-buy">
+  <div class="sectionHeader">
+    <h1><?= $data->title() ?></h1>
+  </div>
   <div class="beerFinder" id="app">
     <div class="searchPanel">
       <div class="beerFinder__tabs">

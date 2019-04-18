@@ -6,4 +6,5 @@ return [
   'direction' => 'ltr',
   'locale' => 'es_MX',
   'name' => 'Mexican',
+  'shortname' => 'MEX',
 ];

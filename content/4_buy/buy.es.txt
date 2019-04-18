@@ -1,8 +1,12 @@
-Title: Donde Comprar
+Title: Encuéntranos
 
 ----
 
-Sectionid: where-to-buy
+navTitle: Encuéntranos
+
+----
+
+sectionID: encuentranos
 
 ----
 

@@ -2,7 +2,6 @@ title: Age Verification
 icon: 🐣
 preset: page
 files: false
-
 fields:
   headline:
     label: Headline

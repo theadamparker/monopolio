@@ -6,5 +6,6 @@ return [
   'direction' => 'ltr',
   'locale' => 'en_US',
   'name' => 'English',
+  'shortname' => 'USA',
   'url' => '/',
 ];

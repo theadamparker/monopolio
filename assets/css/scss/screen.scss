@@ -158,6 +158,10 @@ h1 {
   }
 }
 
+.sectionHeader h1 {
+	color: $white;
+}
+
 h2 {
 	font-size: 25px;
   line-height: 1;
@@ -263,9 +267,18 @@ section {
   align-items: center;
 }
 
+.sectionHeader {
+	background: $teal;
+	padding: 40px $sitePad 20px;
+	margin: 0;
+	width: calc(100% + #{$sitePad}*2);
+	margin-left: -#{$sitePad};
+	text-align: center;
+}
+
 .section--grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 270px;
   align-items: center;
 	width: calc(100% + #{$sitePad}*2);
@@ -278,7 +291,7 @@ section {
   @include mobile {
     // display: flex;
     // flex-direction: column;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	  grid-auto-rows: 230px;
 
   }
@@ -323,6 +336,35 @@ section {
 
 .row-2 {
   grid-row: span 2;
+}
+
+.featuredImage {
+	grid-row: span 2;
+	grid-column: span 4;
+
+	@include mobile {
+		// grid-column: span 3;
+	}
+}
+
+.galleryItem {
+	grid-column: span 2;
+
+	@include mobile {
+		
+	}
+}
+
+.textModule {
+	padding: 30px;
+  text-align: center;
+	grid-row: span 2;
+	grid-column: span 4;
+
+	@include mobile {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 
@@ -415,7 +457,8 @@ footer {
 }
 
 .header {
-	background: url(../img/pattern-bg.jpg) repeat $teal;
+	// background: url(../img/pattern-bg.jpg) repeat $teal;
+	background: $white;
   height: 60px;
   position: fixed;
   top: 0;
@@ -433,9 +476,9 @@ footer {
 
 .mainNav {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-around;
-	margin-top: 10px;
+	margin: 10px auto 0;
 
 	@include mobile {
 		display: none;
@@ -446,12 +489,12 @@ footer {
 		transition: .3s all ease;
 
 		&.active {
-			border-bottom: 2px solid $white;
+			border-bottom: 2px solid $teal;
 
 			&:link,
 			&:active,
 			&:visited {
-				color: $white;
+				color: $teal;
 			}
 		}
 
@@ -459,13 +502,60 @@ footer {
 		&:active,
 		&:visited {
 			text-decoration: none;
-			color: $offWhite;
+			color: $teal;
 		}
 
 		&:hover {
-			color: $white;
+			color: $teal;
 		}
 	}
+}
+
+.languageSelect {
+	position: absolute;
+	left: $sitePad;
+	margin-top: 5px;
+	display: flex;
+
+	a {
+		&:link,
+		&:active,
+		&:visited,
+		&:hover {
+			color: $teal;
+			text-decoration: none;
+		}
+	}
+
+	> li {	// this is this button
+		border: 1px solid $teal;
+		background: none;
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 4px;
+		position: relative;
+		margin-right: $sitePad;
+
+		&::before { // pseudo element used for second border https://css-tricks.com/snippets/css/multiple-borders/
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -7px;
+		  left: -7px;
+		  right: -7px;
+		  bottom: -7px;
+		  border: 3px solid $teal;
+		}
+
+		&.active {
+			// background: $white;
+		}
+	}
+}
+
+header .socialMedia {
+	position: absolute;
+	right: $sitePad;
 }
 
 

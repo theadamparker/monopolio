@@ -1,4 +1,4 @@
-Title: Nuestra Herencia
+Title: Tradicion
 
 ----
 
@@ -6,7 +6,11 @@ Headline1: Adventure
 
 ----
 
-Sectionid: our-heritage
+navTitle: Tradicion
+
+----
+
+sectionID: tradicion
 
 ----
 
@@ -18,7 +22,7 @@ Cover: - mono-gallery-pooltable.jpg
 
 ----
 
-Gallery: 
+Gallery:
 
 - mono-gallery-cerveceria.jpg
 - mono-gallery-bicycle.jpg
@@ -30,7 +34,7 @@ Headline2: Non Plus Ultra
 
 ----
 
-Text2: 
+Text2:
 
 short for “Non Terre Plus Ultra” or “no land further beyond,” was a widely adopted motto before the discovery of the New World. Spain consequentially adopted the moto “Plus Ultra” or “go beyond.” The cerveceria’s founders proudly displayed their own interpretation in 1900:
 **“The beer of the land further beyond”**
@@ -41,7 +45,7 @@ Cover2: - mono-feature-old-label.jpg
 
 ----
 
-Gallery2: 
+Gallery2:
 
 - mono-gallery-heritage-label.jpg
 - mono-gallery-can-lager-clara.jpg
@@ -61,7 +65,7 @@ Text3: The Revolutionaries fighting in the desert climate of San Luis fueled bra
 
 ----
 
-Gallery3: 
+Gallery3:
 
 - mono-gallery-carriage.jpg
 - mono-gallery-team-wide.jpg

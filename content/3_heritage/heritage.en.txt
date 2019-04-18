@@ -6,7 +6,11 @@ Headline1: Adventure
 
 ----
 
-sectionID: our-heritage
+navTitle: Tradition
+
+----
+
+sectionID: tradition
 
 ----
 

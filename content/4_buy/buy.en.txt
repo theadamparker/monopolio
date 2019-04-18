@@ -2,7 +2,11 @@ Title: Where to Buy
 
 ----
 
-sectionID: where-to-buy
+navTitle: Find Us
+
+----
+
+sectionID: find-us
 
 ----
 
