@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <title><?= $site->title() ?> | <?= $page->title() ?></title>
+  <title>Cervecería de San Luis | <?= $page->title() ?></title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= $site->url() ?>/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= $site->url() ?>/assets/img/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="<?= $site->url() ?>/assets/img/favicon/favicon.ico">
 
   <?= css(['assets/css/screen.css', '@auto']) ?>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
