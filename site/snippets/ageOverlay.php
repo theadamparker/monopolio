@@ -15,11 +15,14 @@ $page = $site->page('ageverification');
     <?php endif ?>
     </div>
     <div class="flexRow">
-      <div class="ageOverlay__button" id="over21">
-        I'm over 21
-      </div>
+      <?= $page->text1()->kirbytext() ?>
+    </div>
+    <div class="flexRow flex">
       <div class="ageOverlay__button" id="under21">
-        I'm under 21
+        No
+      </div>
+      <div class="ageOverlay__button" id="over21">
+        Sî
       </div>
     </div>
   </div>

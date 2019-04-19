@@ -2,24 +2,20 @@ Title: Age Verification
 
 ----
 
-Headline: 
+Headline:
 
 ----
 
-Text1: 
+Text1: Are you 21 or over?
 
 ----
 
-Cover: 
+Cover:
 
 - desertBG.png
 
 ----
 
-Textplate: 
+Textplate:
 
 - mono-lockup.png
-
-----
-
-Text: Are you over 21?

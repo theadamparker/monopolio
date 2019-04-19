@@ -2,15 +2,15 @@ Title: Our Story
 
 ----
 
-Headline: Nuestra Historia
+Headline: Historia
 
 ----
 
-sectionID: historia
+Sectionid: historia
 
 ----
 
-navTitle: Historia
+Navtitle: Historia
 
 ----
 

@@ -2,16 +2,16 @@ Title: Our Story
 
 ----
 
-Headline: Our Story
-
-----
-
-sectionID: story
-
-----
-
-navTitle: Story
+Headline: Story
 
 ----
 
 Text: In 1882, a Mexican farmer and a wandering Frenchman formed an unlikely duo with a single goal in mind: to brew the finest cerveza in all the land. Their famous lagers, ‘Monopolio’ and ‘Una San Luis’, were proudly brewed for 50 years. Today, in honor of that tradition, the Cerveceria de San Luis crafts the original recipes locally, on both sides of the border, for superior taste and exquisite freshness.
+
+----
+
+Sectionid: story
+
+----
+
+Navtitle: Story

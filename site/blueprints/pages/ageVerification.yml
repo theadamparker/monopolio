@@ -3,9 +3,6 @@ icon: 🐣
 preset: page
 files: false
 fields:
-  headline:
-    label: Headline
-    type: text
   text1:
     label: Text
     type: textarea

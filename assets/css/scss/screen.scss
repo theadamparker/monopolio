@@ -514,6 +514,7 @@ footer {
 	a {
 		text-transform: uppercase;
 		transition: .3s all ease;
+		letter-spacing: 2px;
 
 		&.active {
 			border-bottom: 2px solid $teal;
@@ -742,6 +743,8 @@ option {
 	width: 100%;
 	height: 100%;
 	z-index: 99;
+	color: $white;
+	text-align: center;
 }
 
 .ageOverlay__photo {
@@ -762,8 +765,8 @@ option {
 .ageOverlay__textWrap {
 	position: absolute;
 	top: 50%;
-	right: $sitePad;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 50%;
 	display: flex;
 	float: right;
@@ -779,6 +782,10 @@ option {
 
 .flexRow {
 	flex: 1;
+}
+
+.flex {
+	display: flex;
 }
 
 .ageOverlay__button {
@@ -800,6 +807,12 @@ option {
 		text-shadow: none;
 		cursor: pointer;
 	}
+}
+
+.ageOverlay p {
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
 }
 
 
