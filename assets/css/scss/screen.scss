@@ -69,6 +69,7 @@ img {
 
 $teal: #11abc2;
 $white: #fff;
+$red: #e93f37;
 $offWhite: #FFFEEB; // used in nav text
 $lightBrown: #DCBF8B;
 $brown: #BF935F; // used for headings and body copy
@@ -490,6 +491,7 @@ footer {
   z-index: 10;
 	border-bottom: 5px solid $brown;
 	transition: .5s all ease;
+	display: flex;
 
   @include mobile {
 		height: 30px;
@@ -503,7 +505,8 @@ footer {
 
 .mainNav {
   display: flex;
-  width: 80%;
+  // width: 80%;
+	flex: 1;
   justify-content: space-around;
 	margin: 10px auto 0;
 
@@ -540,10 +543,9 @@ footer {
 }
 
 .languageSelect {
-	position: absolute;
-	left: $sitePad;
 	margin-top: 5px;
 	display: flex;
+	align-items: baseline;
 
 	a {
 		&:link,
@@ -563,6 +565,19 @@ footer {
 		padding: 4px;
 		position: relative;
 		margin-right: $sitePad;
+
+		&.active {
+			background: $teal;
+
+			a {
+				&:link,
+				&:active,
+				&:visited,
+				&:hover {
+					color: $white;
+				}
+			}
+		}
 
 		&::before { // pseudo element used for second border https://css-tricks.com/snippets/css/multiple-borders/
 			content: '';
@@ -591,14 +606,39 @@ footer {
 .transparent .languageSelect li {
 	border-color: $white;
 
+	&.active {
+		background: $white;
+
+		a {
+			&:link,
+			&:active,
+			&:visited,
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+
 	&::before {
 		border-color: $white;
 	}
 }
 
-header .socialMedia {
-	position: absolute;
-	right: $sitePad;
+.socialMedia {
+	display: flex;
+}
+
+.socialMediaIcon {
+	width: 30px;
+	margin-left: 5px;
+}
+
+.socialMediaIcon path {
+	fill: $teal;
+}
+
+.transparent .socialMediaIcon path {
+	fill: $white;
 }
 
 
