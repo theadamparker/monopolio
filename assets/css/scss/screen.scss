@@ -264,7 +264,9 @@ sup {
 /***********************/
 
 body {
-	background: $offWhite;
+	// background: $offWhite;
+	background: url('../img/background-pattern.jpg') repeat $offWhite;
+	background-size: 40%;
 }
 
 .page {
