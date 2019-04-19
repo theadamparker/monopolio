@@ -154,6 +154,9 @@ h1 {
 	hyphens: auto;
 
   .section--photoBG & {
+		letter-spacing: 5px;
+    font-size: 45px;
+		margin-bottom: 0;
     color: $white;
 		text-shadow: 2px 2px 5px rgba(0,0,0,.3);
   }
@@ -911,4 +914,15 @@ option {
 .textModule .separator {
 	width: 210px;
 	margin: 0 auto 20px;
+}
+
+.separator__story--top {
+	width: 260px;
+	margin-bottom: 5px;
+}
+
+.separator__story--bottom {
+	width: 220px;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
