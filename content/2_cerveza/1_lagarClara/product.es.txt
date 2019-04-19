@@ -1,0 +1,21 @@
+Title: Lager Clara
+
+----
+
+Name: Lager Clara
+
+----
+
+Description: Lager Clara Una cerveza dorada estilo Pilsner elaborada originalmente para la comunidad minera de San Luis. Equilibrado, limpio, y un poco dulce.
+
+----
+
+ingredients: Ingredientes 100% naturales
+
+----
+Stats:
+
+-
+  hops: Test Hops
+  abv: null
+  ibu: null

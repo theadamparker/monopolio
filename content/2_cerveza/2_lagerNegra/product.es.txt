@@ -1,0 +1,22 @@
+Title: Lager Negra
+
+----
+
+Name: Lager Negra
+
+----
+
+Description: Lager Negra Una cerveza lager al estilo tradicional de Viena. Crujiente, malta tostada y ricos sabores a caramelo, cuerpo medio, bien equilibrado y notablemente suave.
+
+----
+
+ingredients: Ingredientes 100% naturales
+
+----
+
+Stats:
+
+-
+  hops: Hops here
+  abv: null
+  ibu: null

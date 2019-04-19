@@ -94,7 +94,7 @@
               <defs><style>.cls-1{fill:#c3996c;}</style></defs><g><rect class="cls-1" x="4.63" y="1.01" width="1.09" height="39.23"/><rect class="cls-1" x="8" y="5.18" width="1.09" height="30.89"/><rect class="cls-1" x="1.26" y="5.18" width="1.09" height="30.89"/></g>
             </svg>
             <div class="beerStatsLockup__ingredients">
-              100% Natural Ingredients
+              <?= $product->ingredients() ?>
             </div>
             <svg viewBox="0 0 10.36 41.25" class="separator--vertical">
               <defs><style>.cls-1{fill:#c3996c;}</style></defs><g><rect class="cls-1" x="4.63" y="1.01" width="1.09" height="39.23"/><rect class="cls-1" x="8" y="5.18" width="1.09" height="30.89"/><rect class="cls-1" x="1.26" y="5.18" width="1.09" height="30.89"/></g>

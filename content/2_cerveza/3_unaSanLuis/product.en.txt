@@ -10,9 +10,13 @@ Description: UNA SAN LUIS A light, crisp blonde lager. Brewed for the warm clima
 
 ----
 
-Stats: 
+ingredients: 100% Natural Ingredients
 
-- 
+----
+
+Stats:
+
+-
   hops: Hops!
   abv: 4.8
   ibu: 60

@@ -10,9 +10,13 @@ Description: Lager Clara A crisp Pilsner-style lager originally brewed for the m
 
 ----
 
-Stats: 
+ingredients: 100% Natural Ingredients
 
-- 
+----
+
+Stats:
+
+-
   hops: Test Hops
   abv: 5
   ibu: 20

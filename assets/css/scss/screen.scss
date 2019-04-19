@@ -254,6 +254,11 @@ sup {
 	font-size: 14px;
 	line-height: 1.4;
 
+	.es & { // typesetting spanish version
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
 	@include tablet {
 		font-size: 9px;
 	}
