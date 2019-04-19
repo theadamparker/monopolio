@@ -20,12 +20,13 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?php echo $image->resize(200)->url()?> 300w,
-      <?php echo $image->resize(300)->url()?> 600w,
-      <?php echo $image->resize(300)->url()?> 900w,
-      <?php echo $image->resize(400)->url()?> 1200w,
-      <?php echo $image->resize(500)->url()?> 1500w"
-      sizes="<?= $image->sizes() ?>"
+      srcset="<?= $image->srcset() ?>"
+      sizes="
+      @media (max-width: 600px) 300px,
+      @media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) 600px,
+      @media (min-width: 600px) and (max-width: 768px) 300,
+      @media (min-width: 600px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) 400,
+      @media (min-width: 768px) 400"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -49,11 +50,13 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?php echo $image->resize(200)->url()?> 300w,
-      <?php echo $image->resize(300)->url()?> 600w,
-      <?php echo $image->resize(300)->url()?> 900w,
-      <?php echo $image->resize(400)->url()?> 1200w,
-      <?php echo $image->resize(500)->url()?> 1500w"
+      srcset="<?= $image->srcset() ?>"
+      sizes="
+      @media (max-width: 600px) 300px,
+      @media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) 600px,
+      @media (min-width: 600px) and (max-width: 768px) 300,
+      @media (min-width: 600px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) 400,
+      @media (min-width: 768px) 400"
       alt="<?= $image->alt()?>"
       />
     </figure>

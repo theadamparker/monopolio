@@ -5,15 +5,10 @@ return [
     // https://getkirby.com/docs/reference/objects/file/srcset
     'thumbs' => [
       'srcsets' => [
-        'default' => [300, 600, 900, 1200],
-        'featuredPhoto' => [300, 600, 900, 1200],
-        'galleryPhoto' => [300, 600, 900],
+        'default' => [300, 400, 600, 800, 1200, 1500],
+        'featuredPhoto' => [300, 400, 800, 1500],
+        'galleryPhoto' => [300, 400, 800, 1500],
       ],
-      'sizes' => [
-        'default' => '(min-width: 600px) 160px, 320px',
-        'featuredPhoto' => '(min-width: 600px) 160px, 320px',
-        'galleryPhoto' => '(min-width: 600px) 160px, 320px',
-      ]
     ],
     'languages' => true,
     'languages.detect' => true
