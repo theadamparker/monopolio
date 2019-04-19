@@ -25,6 +25,7 @@
       <?php echo $image->resize(300)->url()?> 900w,
       <?php echo $image->resize(400)->url()?> 1200w,
       <?php echo $image->resize(500)->url()?> 1500w"
+      sizes="<?= $image->sizes() ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>

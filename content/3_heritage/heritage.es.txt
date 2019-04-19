@@ -2,31 +2,17 @@ Title: Tradicion
 
 ----
 
-Headline1: Adventure
+Headline1: En honor a una tradición mexicana.
 
 ----
 
-navTitle: Tradicion
+Text1: En 1860, un francés navegó a través del Atlántico hasta St. Louis, Missouri, donde dominaría sus habilidades como cervecero. Después de que estalló la Guerra Civil, viajó al sur a México. Un encuentro casual con un agricultor local de San Luis Potosí permitió obtener la combinación correcta de habilidades e ingredientes para elaborar cerveza. En última instancia, fundaron la Cervecería de San Luis, una gran cervecería y orgulloso símbolo de los avances de la época.
 
 ----
 
-sectionID: tradicion
+Cover: 
 
-----
-
-Text1: Adventure. In the 1860’s a Frenchman journeys to St Louis, Missouri to master his skills as a brewer. During the Civil War he travels south to Mexico, where a chance meeting with a Mexican farmer from San Luis Potosi leads to the founding of the Cerveceria de San Luis, a grand brewery and proud symbol of the advancements of the time.
-
-----
-
-Cover: - mono-gallery-pooltable.jpg
-
-----
-
-Gallery:
-
-- mono-gallery-cerveceria.jpg
-- mono-gallery-bicycle.jpg
-- mono-gallery-cerveceria-illustration.jpg
+- 3-tradition-feature-1.jpg
 
 ----
 
@@ -34,57 +20,51 @@ Headline2: Non Plus Ultra
 
 ----
 
-Text2:
+Text2: 
 
-short for “Non Terre Plus Ultra” or “no land further beyond,” was a widely adopted motto before the discovery of the New World. Spain consequentially adopted the moto “Plus Ultra” or “go beyond.” The cerveceria’s founders proudly displayed their own interpretation in 1900:
-**“The beer of the land further beyond”**
-
-----
-
-Cover2: - mono-feature-old-label.jpg
+La abreviatura de "Non Terre Plus Ultra" o "ninguna tierra más allá", fue una moto popular antes del descubrimiento del Nuevo Mundo. Más tarde, España adoptó "Plus Ultra" o "más allá de" refiriéndose al descubrimiento de Colón. Hoy puedes encontrar la moto en la bandera española entre los pilares de Hércules. Los fundadores originales de Cervecería de San Luis mostraron con orgullo su propia interpretación en 1900:
+**"La cerveza de la tierra más allá".**
 
 ----
 
-Gallery2:
+Cover2: 
 
-- mono-gallery-heritage-label.jpg
-- mono-gallery-can-lager-clara.jpg
-- mono-gallery-heritage2.jpg
+- 3-tradition-feature-2.jpg
 
 ----
 
-Cover3: - mono-feature-parade.jpg
+Cover3: 
+
+- 3-tradition-feature-3.jpg
 
 ----
 
-Headline3: Revolutionaries
+Headline3: Revolucionarios
 
 ----
 
-Text3: The Revolutionaries fighting in the desert climate of San Luis fueled bravado and quenched thirst with Monopolio. One excerpt from El Estandarte in 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
+Text3: Durante la guerra por la independencia, los revolucionarios que luchaban en los desiertos y las montañas de San Luis reunieron coraje con un Monopolio antes de la batalla. En mayo de 1911, un extracto de un periódico local "El Estandarte" decía: "Los revolucionarios dicen que lo único mejor que las balas de calibre 30:30 es un delicioso Monopolio de la Cervecería de San Luis".
 
 ----
 
-Gallery3:
-
-- mono-gallery-carriage.jpg
-- mono-gallery-team-wide.jpg
+Headline4: Béisbol
 
 ----
 
-Headline4: Baseball
+Text4: 
+
+Los trabajadores de la fábrica formaron un equipo de béisbol legendario, llamado así por su cerveza de premio. Los domingos desfilaron por la ciudad hacia su estadio local, enfrente La cervecería, en un carro tirado por caballos marcado con el sello y la bandera de la compañía.
+**¡Sólo se confió en la mujer para trabajar en la sala de embotellado!**
 
 ----
 
-Text4: The Monopolio Baseball team paraded through town towards the brewery’s own stadium ever Sunday on a horse-drawn carriage marked with the factory CSL emblem. The Monopolio flag leading the way.
+Cover4: 
+
+- 3-tradition-feature-4.jpg
 
 ----
 
-Cover4: - mono-feature-stadium.jpg
-
-----
-
-Cover5: - mono-feature-bottling.jpg
+Cover5: 
 
 ----
 
@@ -93,6 +73,14 @@ Headline5: Bottling
 ----
 
 Text5: The cerveceria only hired women to bottle the beer, men couldn’t be trusted
+
+----
+
+Navtitle: Tradicion
+
+----
+
+Sectionid: tradicion
 
 ----
 

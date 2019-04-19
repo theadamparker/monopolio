@@ -8,6 +8,11 @@ return [
         'default' => [300, 600, 900, 1200],
         'featuredPhoto' => [300, 600, 900, 1200],
         'galleryPhoto' => [300, 600, 900],
+      ],
+      'sizes' => [
+        'default' => '(min-width: 600px) 160px, 320px',
+        'featuredPhoto' => '(min-width: 600px) 160px, 320px',
+        'galleryPhoto' => '(min-width: 600px) 160px, 320px',
       ]
     ],
     'languages' => true,

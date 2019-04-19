@@ -23,7 +23,8 @@
         <?php foreach($kirby->languages() as $language): ?>
         <li<?php e($kirby->language() == $language, ' class="active"') ?>>
           <a href="<?php echo $language->url() ?>">
-            <?php echo html($language->name()) ?>
+            <?php $fallback = $language->name();
+            echo i18n::translate('shortname', $fallback, $language->code()); ?>
           </a>
         </li>
         <?php endforeach ?>

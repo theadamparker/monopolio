@@ -221,6 +221,10 @@ sup {
 	max-width: 300px;
 	margin: 0 auto 60px;
 	text-align: left;
+
+	@include tablet {
+		max-width: 100%;
+	}
 }
 
 .beerStatsLockup__label {
@@ -235,6 +239,10 @@ sup {
 	padding: 0 10px;
 	font-weight: 700;
 	margin-top: 3px;
+
+	@include tablet {
+		font-size: 18px;
+	}
 }
 
 .beerStatsLockup__ingredients {
@@ -242,6 +250,10 @@ sup {
 	letter-spacing: 3px;
 	font-size: 14px;
 	line-height: 1.4;
+
+	@include tablet {
+		font-size: 9px;
+	}
 }
 
 /***********************/
@@ -259,8 +271,6 @@ body {
 }
 
 .homephoto {
-	width: calc(100% + #{$sitePad}*2);
-	margin-left: -#{$sitePad};
 	min-height: 0;
 }
 
@@ -282,12 +292,17 @@ section {
   align-items: center;
 }
 
+.section--fullBleed {
+	width: calc(100% + #{$sitePad}*2);
+	// width: 100vw;
+	margin-left: -#{$sitePad};
+	overflow: hidden;
+}
+
 .sectionHeader {
 	background: $teal;
 	padding: 40px $sitePad 20px;
-	margin: 0;
-	width: calc(100% + #{$sitePad}*2);
-	margin-left: -#{$sitePad};
+	margin-bottom: 0;
 	text-align: center;
 }
 
@@ -494,7 +509,7 @@ footer {
 	display: flex;
 
   @include mobile {
-		height: 30px;
+		justify-content: space-between;
   }
 
 	&.transparent {
@@ -542,6 +557,17 @@ footer {
 	}
 }
 
+.transparent .mainNav a.active {
+	border-color: $white;
+
+	&:link,
+	&:active,
+	&:visited {
+		color: $white;
+	}
+}
+
+
 .languageSelect {
 	margin-top: 5px;
 	display: flex;
@@ -562,7 +588,7 @@ footer {
 		background: none;
 		font-size: 12px;
 		text-transform: uppercase;
-		padding: 4px;
+		padding: 4px 8px 2px;
 		position: relative;
 		margin-right: $sitePad;
 
@@ -583,11 +609,11 @@ footer {
 			content: '';
 			position: absolute;
 			z-index: -1;
-			top: -7px;
-		  left: -7px;
-		  right: -7px;
-		  bottom: -7px;
-		  border: 3px solid $teal;
+			top: -5px;
+		  left: -5px;
+		  right: -5px;
+		  bottom: -5px;
+		  border: 2px solid $teal;
 		}
 	}
 }
@@ -626,11 +652,16 @@ footer {
 
 .socialMedia {
 	display: flex;
+	align-items: center;
+
+	@include mobile {
+
+	}
 }
 
 .socialMediaIcon {
-	width: 30px;
-	margin-left: 5px;
+	width: 25px;
+	margin-left: 10px;
 }
 
 .socialMediaIcon path {
@@ -863,13 +894,16 @@ option {
 .separator--top {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	max-width: 100%;
 }
 
 .separator--vertical {
 	width: 13px;
 	margin-top: 1px;
+	max-width: 100%;
 }
 
 .separator--bottom {
 	margin-top: 10px;
+	max-width: 100%;
 }

@@ -53,12 +53,3 @@ fields:
     label: Text
     type: textarea
     size: small
-  cover5:
-    extends: fields/cover
-  headline5:
-    label: Headline
-    type: text
-  text5:
-    label: Text
-    type: textarea
-    size: small
