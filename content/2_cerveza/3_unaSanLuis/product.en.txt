@@ -6,13 +6,13 @@ Name: Una San Luis
 
 ----
 
-Description: A crisp and crushable Mexican blonde lager first brewed to quench the thirst of the hard working mining community of San Luis. Balanced, light body, and slightly sweet coming from a mix of pilsner malt and maiz grain. 100% natural ingredients.
+Description: UNA SAN LUIS A light, crisp blonde lager. Brewed for the warm climate of San Luis Potosi. Balanced, light body, and refreshing.
 
 ----
 
-Stats:
+Stats: 
 
--
+- 
   hops: Hops!
   abv: 4.8
   ibu: 60

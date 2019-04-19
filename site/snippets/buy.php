@@ -1,7 +1,5 @@
 <section id="<?= $data->sectionID() ?>" class="where-to-buy">
-  <div class="sectionHeader">
-    <h1><?= $data->title() ?></h1>
-  </div>
+  <?php snippet('sectionheader', ['title' => $data->title()]) ?>
   <div class="beerFinder" id="app">
     <div class="searchPanel">
       <div class="beerFinder__tabs">

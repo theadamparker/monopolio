@@ -6,13 +6,13 @@ Name: Lager Clara
 
 ----
 
-Description: A crisp and crushable Mexican blonde lager first brewed to quench the thirst of the hard working mining community of San Luis. Balanced, light body, and slightly sweet coming from a mix of pilsner malt and maiz grain. 100% natural ingredients.
+Description: Lager Clara A crisp Pilsner-style lager originally brewed for the mining community of San Luis. Balanced, clean, and a little sweet.
 
 ----
 
-Stats:
+Stats: 
 
--
-  hops: 'Hallertau & Czech Saaz'
+- 
+  hops: Test Hops
   abv: 5
   ibu: 20

@@ -159,17 +159,23 @@ h1 {
 }
 
 .sectionHeader h1 {
+	font-size: 50px;
 	color: $white;
+	margin: 9px auto 6px;
+
+	@include mobile {
+		font-size: 35px;
+	}
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 30px;
   line-height: 1;
   font-weight: 500;
-  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-	color: $teal;
+	margin-top: 20px;
+	margin-bottom: -10px;
 }
 
 p {
@@ -181,8 +187,9 @@ p {
   }
 
 	.productDescription & {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5;
+		text-align: center;
 	}
 }
 
@@ -210,29 +217,30 @@ sup {
 }
 
 .beerStatsLockup {
-	max-width: 280px;
+	max-width: 300px;
 	margin: 0 auto 60px;
 	text-align: left;
 }
 
 .beerStatsLockup__label {
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 9px;
 	letter-spacing: 2px;
-	margin-bottom: 10px;
 }
 
 .beerStatsLockup__number {
-	font-size: 35px;
+	font-size: 24px;
 	text-align: center;
+	padding: 0 10px;
+	font-weight: 700;
+	margin-top: 3px;
 }
 
-.beerStatsLockup__hops {
-	font-size: 35px;
-	margin-bottom: 15px;
-	text-align: left;
-	border-bottom: 2px solid $brown;
-	padding-bottom: 15px;
+.beerStatsLockup__ingredients {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 14px;
+	line-height: 1.4;
 }
 
 /***********************/
@@ -247,6 +255,12 @@ body {
 	max-width: $maxWidth;
 	margin: 0 auto;
 	background: $white;
+}
+
+.homephoto {
+	width: calc(100% + #{$sitePad}*2);
+	margin-left: -#{$sitePad};
+	min-height: 0;
 }
 
 section {
@@ -274,6 +288,14 @@ section {
 	width: calc(100% + #{$sitePad}*2);
 	margin-left: -#{$sitePad};
 	text-align: center;
+}
+
+.sectionHeader__flourish {
+	width: 400px;
+
+	@include mobile {
+		width: 250px;
+	}
 }
 
 .section--grid {
@@ -351,7 +373,7 @@ section {
 	grid-column: span 2;
 
 	@include mobile {
-		
+
 	}
 }
 
@@ -386,7 +408,7 @@ section {
 
 	img {
 		margin: 0 auto;
-		mix-blend-mode: multiply; // TODO change this once we have PNG images
+		max-height: 80vh;
 	}
 }
 
@@ -472,6 +494,11 @@ footer {
   @include mobile {
 		height: 30px;
   }
+
+	&.transparent {
+		background: none;
+		border-bottom: 0;
+	}
 }
 
 .mainNav {
@@ -546,10 +573,25 @@ footer {
 		  bottom: -7px;
 		  border: 3px solid $teal;
 		}
+	}
+}
 
-		&.active {
-			// background: $white;
+.transparent {
+	a {
+		&:link,
+		&:active,
+		&:visited,
+		&:hover {
+			color: $white;
 		}
+	}
+}
+
+.transparent .languageSelect li {
+	border-color: $white;
+
+	&::before {
+		border-color: $white;
 	}
 }
 
@@ -766,24 +808,15 @@ option {
 /***********************/
 
 .separator--top {
-	margin-top: 30px;
-	margin-bottom: -10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .separator--vertical {
 	width: 13px;
-	margin-top: 12px;
+	margin-top: 1px;
 }
 
 .separator--bottom {
-	margin-top: 20px;
-}
-
-.sealBG {
-	background: url('../img/mono-seal-half.jpg') no-repeat;
-	background-size: contain;
-  background-position: right center;
-	background-color: $offWhite;
-	background-attachment: fixed;
-	background-blend-mode: multiply;
+	margin-top: 10px;
 }

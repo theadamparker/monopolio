@@ -1,7 +1,5 @@
 <section id="<?= $data->sectionID() ?>" class="">
-  <div class="sectionHeader">
-    <h1><?= $data->title() ?></h1>
-  </div>
+  <?php snippet('sectionheader', ['title' => $data->title()]) ?>
   <div class="section--grid">
     <?php if($image = $data->cover()->toFile()): ?>
     <figure class="featuredImage photoModule">
@@ -62,7 +60,7 @@
 
   </div>
 
-  <div class="products sealBG">
+  <div class="products">
 
     <?php foreach($data->children()->listed() as $product): ?>
       <div class="product">
@@ -72,37 +70,40 @@
         </figure>
         <?php endif ?>
         <h2><?= $product->name() ?></h2>
-        <div class="productDescription">
-          <?= $product->description()->kirbytext() ?>
-        </div>
         <div class="beerStatsLockup">
-          <svg class="separator--top" viewBox="0 0 309.12 35.03">
-            <defs><style>.cls-1{fill:#c3996c;}</style></defs><g><path class="cls-1" d="M119.46,12.78H13.69s-12.6,0-12.6-7.27c0-3,1.41-4,3.43-4A2.68,2.68,0,0,1,7.3,4.29,2.45,2.45,0,0,1,4.79,6.82c0,1.77,2.74,4.45,12.17,4.45H119.15Z"/><path class="cls-1" d="M132.36,33.52H295.42s12.61,0,12.61-7.27c0-3-1.41-4-3.43-4A2.68,2.68,0,0,0,301.82,25a2.45,2.45,0,0,0,2.51,2.53c0,1.77-2.74,4.45-12.18,4.45H132.67Z"/><path class="cls-1" d="M118,11.27h8.89a6.24,6.24,0,0,1,6.23,6.23v16h-1.5v-16a4.74,4.74,0,0,0-4.73-4.73H118Z"/><rect class="cls-1" x="138.78" y="25.94" width="153.03" height="1.56"/><rect class="cls-1" x="14.05" y="6.36" width="109.48" height="1.56"/><circle class="cls-1" cx="286.73" cy="29.95" r="0.62"/><circle class="cls-1" cx="277.99" cy="29.95" r="0.62"/><circle class="cls-1" cx="269.25" cy="29.95" r="0.62"/><circle class="cls-1" cx="260.52" cy="29.95" r="0.62"/><circle class="cls-1" cx="251.78" cy="29.95" r="0.62"/><circle class="cls-1" cx="243.05" cy="29.95" r="0.62"/><circle class="cls-1" cx="234.31" cy="29.95" r="0.62"/><circle class="cls-1" cx="225.57" cy="29.95" r="0.62"/><circle class="cls-1" cx="216.84" cy="29.95" r="0.62"/><circle class="cls-1" cx="117.27" cy="9.76" r="0.62"/><circle class="cls-1" cx="104.87" cy="9.76" r="0.62"/><circle class="cls-1" cx="92.46" cy="9.76" r="0.62"/><circle class="cls-1" cx="80.05" cy="9.76" r="0.62"/><circle class="cls-1" cx="67.65" cy="9.76" r="0.62"/><circle class="cls-1" cx="55.24" cy="9.76" r="0.62"/><circle class="cls-1" cx="42.84" cy="9.76" r="0.62"/><circle class="cls-1" cx="30.43" cy="9.76" r="0.62"/><circle class="cls-1" cx="18.02" cy="9.76" r="0.62"/></g>
+          <svg class="separator--top" viewBox="0 0 455.45 21.24">
+            <g id="CONTENT"><rect x="23.38" y="6.89" width="411.61" height="2.09" style="fill:#c3996c"/><path d="M20,18.17H435.47s16.87,0,16.87-9.74c0-4.06-1.88-5.36-4.58-5.36A3.59,3.59,0,0,0,444,6.8a3.28,3.28,0,0,0,3.36,3.39c0,2.37-3.67,6-16.3,6H24.36c-12.63,0-16.3-3.59-16.3-6A3.28,3.28,0,0,0,11.42,6.8,3.58,3.58,0,0,0,7.7,3.07c-2.7,0-4.59,1.3-4.59,5.36C3.11,18.18,20,18.17,20,18.17Z" style="fill:#c3996c"/><circle cx="32.88" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="47.18" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="61.47" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="75.76" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="90.06" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="104.35" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="118.64" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="132.94" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="147.23" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="161.52" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="175.82" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="190.11" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="204.4" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="218.7" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="232.99" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="247.28" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="261.58" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="275.87" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="290.16" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="304.46" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="318.75" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="333.04" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="347.34" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="361.63" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="375.92" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="390.22" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="404.51" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="418.8" cy="13" r="0.83" style="fill:#c3996c"/></g>
           </svg>
-          <div class="beerStatsLockup__label">
-            Hops Variety
+          <div class="productDescription">
+            <?= $product->description()->kirbytext() ?>
           </div>
-          <div class="beerStatsLockup__hops">
-            Hallertau & Czech Saaz
-          </div>
+          <svg class="separator--top" viewBox="0 0 455.45 21.24">
+            <g id="CONTENT"><rect x="23.38" y="6.89" width="411.61" height="2.09" style="fill:#c3996c"/><path d="M20,18.17H435.47s16.87,0,16.87-9.74c0-4.06-1.88-5.36-4.58-5.36A3.59,3.59,0,0,0,444,6.8a3.28,3.28,0,0,0,3.36,3.39c0,2.37-3.67,6-16.3,6H24.36c-12.63,0-16.3-3.59-16.3-6A3.28,3.28,0,0,0,11.42,6.8,3.58,3.58,0,0,0,7.7,3.07c-2.7,0-4.59,1.3-4.59,5.36C3.11,18.18,20,18.17,20,18.17Z" style="fill:#c3996c"/><circle cx="32.88" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="47.18" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="61.47" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="75.76" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="90.06" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="104.35" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="118.64" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="132.94" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="147.23" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="161.52" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="175.82" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="190.11" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="204.4" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="218.7" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="232.99" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="247.28" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="261.58" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="275.87" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="290.16" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="304.46" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="318.75" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="333.04" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="347.34" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="361.63" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="375.92" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="390.22" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="404.51" cy="13" r="0.83" style="fill:#c3996c"/><circle cx="418.8" cy="13" r="0.83" style="fill:#c3996c"/></g>
+          </svg>
           <div class="beerStatsLockup__numberWrap">
             <div>
-              <div class="beerStatsLockup__label">
-                ABV
-              </div>
               <div class="beerStatsLockup__number">
-                5.0%
+                20
+              </div>
+              <div class="beerStatsLockup__label">
+                IBU
               </div>
             </div>
             <svg viewBox="0 0 10.36 41.25" class="separator--vertical">
               <defs><style>.cls-1{fill:#c3996c;}</style></defs><g><rect class="cls-1" x="4.63" y="1.01" width="1.09" height="39.23"/><rect class="cls-1" x="8" y="5.18" width="1.09" height="30.89"/><rect class="cls-1" x="1.26" y="5.18" width="1.09" height="30.89"/></g>
             </svg>
+            <div class="beerStatsLockup__ingredients">
+              100% Natural Ingredients
+            </div>
+            <svg viewBox="0 0 10.36 41.25" class="separator--vertical">
+              <defs><style>.cls-1{fill:#c3996c;}</style></defs><g><rect class="cls-1" x="4.63" y="1.01" width="1.09" height="39.23"/><rect class="cls-1" x="8" y="5.18" width="1.09" height="30.89"/><rect class="cls-1" x="1.26" y="5.18" width="1.09" height="30.89"/></g>
+            </svg>
             <div>
-              <div class="beerStatsLockup__label">
-                IBU
-              </div>
               <div class="beerStatsLockup__number">
-                20
+                5.0%
+              </div>
+              <div class="beerStatsLockup__label">
+                ABV
               </div>
             </div>
           </div>

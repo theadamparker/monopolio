@@ -1,9 +1,5 @@
 title: Homepage
 icon: 📔
-
-sections:
-  parts:
-    headline: Parts
-    type: pages
-    status: all
-    image: false
+fields:
+  cover:
+    extends: fields/cover

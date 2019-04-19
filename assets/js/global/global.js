@@ -31,6 +31,7 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
+    var ourBeers = $('#cerveza-de-verdad');
     $('.mainNav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
@@ -42,4 +43,11 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
+
+    if(scrollPos > ourBeers.position().top) {
+      $('.header').removeClass('transparent')
+    } else {
+      $('.header').addClass('transparent')
+    }
+
 }

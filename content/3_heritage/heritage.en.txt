@@ -2,33 +2,26 @@ Title: Our Heritage
 
 ----
 
-Headline1: Adventure
+Headline1: In Honor of a Mexican Tradition
 
 ----
 
-navTitle: Tradition
+Text1: In 1860 a Frenchman sailed across the Atlantic to St Louis, Missouri where he would master his skills as a brewer. After the Civil War broke out he traveled south to Mexico. A chance meeting with a local farmer from San Luis Potosi allowed for the right mix of skills and ingredients to brew cerveza. They ultimately founded the Cerveceria de San Luis, a grand brewery and proud symbol of the advancements of the time.
 
 ----
 
-sectionID: tradition
+Cover: 
+
+- 3-tradition-feature-1.jpg
 
 ----
 
-Text1: Adventure. In the 1860’s a Frenchman journeys to St Louis, Missouri to master his skills as a brewer. During the Civil War he travels south to Mexico, where a chance meeting with a Mexican farmer from San Luis Potosi leads to the founding of the Cerveceria de San Luis, a grand brewery and proud symbol of the advancements of the time.
+Gallery: 
 
-----
-
-Cover:
-
-- mono-gallery-pooltable.jpg
-
-----
-
-Gallery:
-
-- mono-gallery-cerveceria.jpg
-- mono-gallery-bicycle.jpg
-- mono-gallery-cerveceria-illustration.jpg
+- 3-tradition-gallery-1-1.jpg
+- 3-tradition-gallery-1-2.jpg
+- 3-tradition-gallery-1-3.jpg
+- 3-tradition-gallery-1-4.jpg
 
 ----
 
@@ -36,30 +29,31 @@ Headline2: Non Plus Ultra
 
 ----
 
-Text2:
+Text2: 
 
-short for “Non Terre Plus Ultra” or “no land further beyond,” was a widely adopted motto before the discovery of the New World. Spain consequentially adopted the moto “Plus Ultra” or “go beyond.” The cerveceria’s founders proudly displayed their own interpretation in 1900:
-**“The beer of the land further beyond”**
-
-----
-
-Cover2:
-
-- mono-feature-old-label.jpg
+Short for “Non Terre Plus Ultra” or “no land further beyond,” was a popular moto before the discovery of the New World. Spain later adopted “Plus Ultra” or “more beyond” referring to Columbus’ discovery. Today you can find the moto on the Spanish Flag between the pillars of Hercules. The Cerveceria de San Luis’ original founders proudly displayed their own interpretation in 1900:
+**“the beer of the land further beyond.”**
 
 ----
 
-Gallery2:
+Cover2: 
 
-- mono-gallery-heritage-label.jpg
-- mono-gallery-can-lager-clara.jpg
-- mono-gallery-heritage2.jpg
+- 3-tradition-feature-2.jpg
 
 ----
 
-Cover3:
+Gallery2: 
 
-- mono-feature-parade.jpg
+- 3-tradition-gallery-2-1.jpg
+- 3-tradition-gallery-2-2.jpg
+- 3-tradition-gallery-2-3-tempphoto.png
+- 3-tradition-gallery-2-4-tempphoto.png
+
+----
+
+Cover3: 
+
+- 3-tradition-feature-3.jpg
 
 ----
 
@@ -67,14 +61,16 @@ Headline3: Revolutionaries
 
 ----
 
-Text3: The Revolutionaries fighting in the desert climate of San Luis fueled bravado and quenched thirst with Monopolio. One excerpt from El Estandarte in 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
+Text3: During the war for Independence revolutionaries fighting in the deserts and mountains of San Luis gathered courage with a Monopolio before battle. An excerpt from a local newspaper ‘El Estandarte’ in May of 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
 
 ----
 
-Gallery3:
+Gallery3: 
 
-- mono-gallery-carriage.jpg
-- mono-gallery-team-wide.jpg
+- 3-tradition-gallery-3-1.png
+- 3-tradition-gallery-3-2.jpg
+- 3-tradition-gallery-3-3.jpg
+- 3-tradition-gallery-3-4.jpg
 
 ----
 
@@ -82,27 +78,36 @@ Headline4: Baseball
 
 ----
 
-Text4: The Monopolio Baseball team paraded through town towards the brewery’s own stadium ever Sunday on a horse-drawn carriage marked with the factory CSL emblem. The Monopolio flag leading the way.
+Text4: 
+
+Workers at the factory formed a legendary baseball team, named after their prize lager. On Sundays they paraded through town towards their home stadium opposite the brewery, on a horse-drawn carriage marked with the company seal and flag.
+**Only woman were trusted to work in the bottling room!**
 
 ----
 
-Cover4:
+Cover4: 
 
-- mono-feature-stadium.jpg
-
-----
-
-Cover5:
-
-- mono-feature-bottling.jpg
+- 3-tradition-feature-4.jpg
 
 ----
 
-Headline5: Bottling
+Cover5: 
 
 ----
 
-Text5: The cerveceria only hired women to bottle the beer, men couldn’t be trusted
+Headline5: 
+
+----
+
+Text5: 
+
+----
+
+Navtitle: Tradition
+
+----
+
+Sectionid: tradition
 
 ----
 

@@ -1,7 +1,5 @@
 <section id="<?= $data->sectionID() ?>">
-  <div class="sectionHeader">
-    <h1><?= $data->title() ?></h1>
-  </div>
+  <?php snippet('sectionheader', ['title' => $data->title()]) ?>
   <div class="section--grid">
     <?php if($image = $data->cover()->toFile()): ?>
     <figure class="featuredImage photoModule">
@@ -104,21 +102,5 @@
       />
     </figure>
     <?php endif ?>
-
-    <?php if($image = $data->cover5()->toFile()): ?>
-    <figure class="featuredImage photoModule">
-      <img
-      src="<?= $image->url()?>"
-      srcset="<?= $image->srcset() ?>"
-      alt="<?= $image->alt()?>"
-      />
-    </figure>
-    <?php endif ?>
-
-    <div class="textModule">
-      <h1><?= $data->headline5() ?></h1>
-      <?= $data->text5()->kirbytext() ?>
-    </div>
-
   </div>
 </section>
