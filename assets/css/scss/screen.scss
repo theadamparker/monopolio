@@ -852,16 +852,13 @@ option {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 50%;
+	width: 500px;
 	display: flex;
 	float: right;
 	flex-direction: column;
 
 	@include mobile {
-		width: 95%;
-		float: none;
-		right: 50%;
-		transform: translate(50%, -50%);
+		width: 80%;
 	}
 }
 
@@ -874,11 +871,11 @@ option {
 }
 
 .ageOverlay__button {
-	font-size: 25px;
+	font-size: 20px;
 	border: 3px solid $white;
 	padding: 10px;
 	flex: 1;
-	margin: 20px auto;
+	margin: 20px;
 	color: $white;
 	transition: .2s all ease;
 	text-shadow: 1px 1px 2px rgba(0,0,0,.6);

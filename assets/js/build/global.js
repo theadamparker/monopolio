@@ -4,6 +4,10 @@ $('#over21').click(function() {
   $('.ageOverlay').fadeOut();
 })
 
+$('#under21').click(function() {
+  window.location.href = 'http://tacombi.com/';
+})
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
