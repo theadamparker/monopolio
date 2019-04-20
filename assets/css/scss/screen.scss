@@ -281,7 +281,10 @@ body {
 }
 
 .homephoto {
-	min-height: 0;
+	height: 100vh;
+	background-color: $red;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 section {
