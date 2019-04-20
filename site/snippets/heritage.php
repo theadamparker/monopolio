@@ -6,6 +6,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -23,11 +24,8 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?php echo $image->resize(200)->url()?> 300w,
-      <?php echo $image->resize(300)->url()?> 600w,
-      <?php echo $image->resize(300)->url()?> 900w,
-      <?php echo $image->resize(400)->url()?> 1200w,
-      <?php echo $image->resize(500)->url()?> 1500w"
+      srcset="<?= $image->srcset('galleryImage') ?>"
+      sizes="<?= sizes('galleryImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -46,6 +44,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -55,11 +54,8 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?php echo $image->resize(200)->url()?> 300w,
-      <?php echo $image->resize(300)->url()?> 600w,
-      <?php echo $image->resize(300)->url()?> 900w,
-      <?php echo $image->resize(400)->url()?> 1200w,
-      <?php echo $image->resize(500)->url()?> 1500w"
+      srcset="<?= $image->srcset('galleryImage') ?>"
+      sizes="<?= sizes('galleryImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -70,6 +66,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -87,11 +84,8 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?php echo $image->resize(200)->url()?> 300w,
-      <?php echo $image->resize(300)->url()?> 600w,
-      <?php echo $image->resize(300)->url()?> 900w,
-      <?php echo $image->resize(400)->url()?> 1200w,
-      <?php echo $image->resize(500)->url()?> 1500w"
+      srcset="<?= $image->srcset('galleryImage') ?>"
+      sizes="<?= sizes('galleryImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -110,6 +104,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>

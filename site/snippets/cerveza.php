@@ -6,6 +6,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -20,13 +21,8 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset() ?>"
-      sizes="
-      @media (max-width: 600px) 300px,
-      @media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) 600px,
-      @media (min-width: 600px) and (max-width: 768px) 300,
-      @media (min-width: 600px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) 400,
-      @media (min-width: 768px) 400"
+      srcset="<?= $image->srcset('galleryImage') ?>"
+      sizes="<?= sizes('galleryImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -41,6 +37,7 @@
       <img
       src="<?= $image->url()?>"
       srcset="<?= $image->srcset() ?>"
+      sizes="<?= sizes('featuredImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -50,13 +47,8 @@
     <figure class="galleryItem">
       <img
       src="<?= $image->url()?>"
-      srcset="<?= $image->srcset() ?>"
-      sizes="
-      @media (max-width: 600px) 300px,
-      @media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) 600px,
-      @media (min-width: 600px) and (max-width: 768px) 300,
-      @media (min-width: 600px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) 400,
-      @media (min-width: 768px) 400"
+      srcset="<?= $image->srcset('galleryImage') ?>"
+      sizes="<?= sizes('galleryImage') ?>"
       alt="<?= $image->alt()?>"
       />
     </figure>
@@ -70,7 +62,12 @@
       <div class="product">
         <?php if($image = $product->image()): ?>
         <figure class="">
-          <img src="<?= $image->url() ?>" alt="" />
+          <img
+          src="<?= $image->url()?>"
+          srcset="<?= $image->srcset() ?>"
+          sizes="<?= sizes('productImage') ?>"
+          alt="<?= $image->alt()?>"
+          />
         </figure>
         <?php endif ?>
         <h2><?= $product->name() ?></h2>

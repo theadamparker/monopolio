@@ -4,10 +4,10 @@ return [
     'debug' => true,
     // https://getkirby.com/docs/reference/objects/file/srcset
     'thumbs' => [
+      'quality'   => 50,
       'srcsets' => [
-        'default' => [300, 400, 600, 800, 1200, 1500],
-        'featuredPhoto' => [300, 400, 800, 1500],
-        'galleryPhoto' => [300, 400, 800, 1500],
+        'default' => [300, 400, 600, 800, 1200, 1300, 1500],
+        'galleryImage' => [300, 400, 600],
       ],
     ],
     'languages' => true,
