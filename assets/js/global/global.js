@@ -19,6 +19,13 @@ $('#under21').click(function() {
 
 // end age overlay scripts
 
+$('.logo').click(function() {
+  // e.preventDefault;
+  $('html, body').stop().animate({
+      'scrollTop': '0'
+  }, 500, 'swing')
+})
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 

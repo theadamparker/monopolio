@@ -29,7 +29,7 @@
         </li>
         <?php endforeach ?>
       </ul>
-      <a class="logo" href="<?= $site->url() ?>">
+      <a class="logo">
         <img src="<?= $site->url() ?>/assets/img/mono-logo.png" alt="<?= $site->title() ?>" />
       </a>
 
