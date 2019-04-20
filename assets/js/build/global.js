@@ -1,12 +1,23 @@
 // global scripts
 
+// Age overlay scripts
+
+$(document).ready(function () {
+  if($('.ageOverlay')) {
+    $('body').addClass('locked')
+  }
+})
+
 $('#over21').click(function() {
+  $('body').removeClass('locked');
   $('.ageOverlay').fadeOut();
 })
 
 $('#under21').click(function() {
   window.location.href = 'http://tacombi.com/';
 })
+
+// end age overlay scripts
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
