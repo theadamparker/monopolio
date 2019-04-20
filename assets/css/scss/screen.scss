@@ -198,14 +198,16 @@ p {
 }
 
 .footerTagline {
-	font-size: 30px;
+	font-size: 22px;
 	text-transform: uppercase;
 	color: $white;
-	margin-bottom: 20px;
+	margin-bottom: 7px;
+	letter-spacing: 1px;
 }
 
 .copyright {
 	color: $white;
+	font-size: 12px;
 	text-transform: uppercase;
 }
 
@@ -473,7 +475,6 @@ section {
 
 .where-to-buy {
 	background: $offWhite;
-	padding-top: 40px;
 	padding-bottom: 40px;
 	min-height: 0;
 }
@@ -699,6 +700,7 @@ footer {
 .beerFinder {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 30px;
 
 	@include mobile {
 		flex-direction: column;

@@ -3,3 +3,5 @@ icon: 📔
 fields:
   cover:
     extends: fields/cover
+  footerlogo:
+    extends: fields/cover

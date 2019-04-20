@@ -2,6 +2,12 @@ Title: Home
 
 ----
 
-Cover: 
+Cover:
 
 - homepage-photo.jpg
+
+----
+
+footerlogo:
+
+-mono-lockup.png
