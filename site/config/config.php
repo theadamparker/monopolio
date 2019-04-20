@@ -4,7 +4,7 @@ return [
     'debug' => true,
     // https://getkirby.com/docs/reference/objects/file/srcset
     'thumbs' => [
-      'quality'   => 50,
+      'quality'   => 75,
       'srcsets' => [
         'default' => [300, 400, 600, 800, 1200, 1300, 1500],
         'galleryImage' => [300, 400, 600],
