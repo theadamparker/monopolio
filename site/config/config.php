@@ -11,7 +11,15 @@ return [
       ],
     ],
     'languages' => true,
-    'languages.detect' => true
+    'languages.detect' => true,
+    'cache' => [
+      'pages' => [
+        'active' => true,
+        'ignore' => function ($page) {
+          return $page->title()->value() === 'Do not cache me';
+        }
+      ]
+    ]
 ];
 
 // Autogit Settings
