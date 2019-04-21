@@ -6,7 +6,7 @@ Name: Lager Clara
 
 ----
 
-Description: Lager Clara A crisp Pilsner-style lager originally brewed for the mining community of San Luis. Balanced, clean, and a little sweet.
+Description: **Lager Clara** A crisp Pilsner-style lager originally brewed for the mining community of San Luis. Balanced, medium body, and a little sweet.
 
 ----
 

@@ -6,18 +6,16 @@ Name: Una San Luis
 
 ----
 
-Description: UNA SAN LUIS A light, crisp blonde lager. Brewed for the warm climate of San Luis Potosi. Balanced, light body, and refreshing.
+Description: **UNA SAN LUIS** A lighter, crisp blonde lager. Brewed for the warm climate of San Luis Potosi.  Balanced, light body, and refreshing.
 
 ----
 
-ingredients: 100% Natural Ingredients
+Stats: 
 
-----
-
-Stats:
-
--
+- 
   ibu: 20
-  abv: 5.0
+  abv: 4.5
 
 ----
+
+Ingredients: 100% Natural Ingredients

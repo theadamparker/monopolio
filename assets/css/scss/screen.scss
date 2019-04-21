@@ -185,6 +185,7 @@ h2 {
 p {
   font-size: 20px;
   line-height: 1.6;
+	margin-bottom: 10px;
 
   .section--photoBG & {
     color: $white;
@@ -193,6 +194,7 @@ p {
 	.productDescription & {
 		font-size: 16px;
 		line-height: 1.5;
+		margin-bottom: 0;
 		text-align: center;
 	}
 }
@@ -425,6 +427,7 @@ section {
 .products {
   display: flex;
   justify-content: space-between;
+	padding-top: 30px;
 	width: calc(100% + #{$sitePad}*2);
 	margin-left: calc(-#{$sitePad}); // note I use calc here so browsers that don't support calc() won't apply the negative margin
 
@@ -957,6 +960,7 @@ option {
 	text-align: center;
 	font-size: 30px;
 	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 

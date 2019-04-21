@@ -10,14 +10,12 @@ Description: UNA SAN LUIS Una lager rubia clara y crujiente. Elaborado para el c
 
 ----
 
-ingredients: Ingredientes 100% naturales
+Stats: 
 
-----
-
-Stats:
-
--
+- 
   ibu: 20
-  abv: 5.0
+  abv: 4.5
 
 ----
+
+Ingredients: Ingredientes 100% naturales

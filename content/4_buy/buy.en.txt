@@ -1,12 +1,12 @@
-Title: Where to Buy
+Title: Cerveza Locator
 
 ----
 
-navTitle: Find Us
+Navtitle: Find Us
 
 ----
 
-sectionID: find-us
+Sectionid: find-us
 
 ----
 

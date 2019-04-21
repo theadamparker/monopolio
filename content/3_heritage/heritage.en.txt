@@ -1,4 +1,4 @@
-Title: Our Heritage
+Title: Tradition
 
 ----
 
@@ -31,8 +31,9 @@ Headline2: Non Plus Ultra
 
 Text2: 
 
-Short for “Non Terre Plus Ultra” or “no land further beyond,” was a popular moto before the discovery of the New World. Spain later adopted “Plus Ultra” or “more beyond” referring to Columbus’ discovery. Today you can find the moto on the Spanish Flag between the pillars of Hercules. The Cerveceria de San Luis’ original founders proudly displayed their own interpretation in 1900:
-**“the beer of the land further beyond.”**
+Short for “Non Terre Plus Ultra” or “no land farther beyond,” was a popular moto before the discovery of the New World. Spain later adopted “Plus Ultra” or “more beyond” referring to Columbus’ discovery. Today you can find the motto on the Spanish Flag, featured across the pillars of Hercules. The Cerveceria de San Luis’ original founders proudly displayed their own interpretation in 1900:
+
+**“The beer of the land further beyond.”**
 
 ----
 
@@ -61,7 +62,7 @@ Headline3: Revolutionaries
 
 ----
 
-Text3: During the war for Independence revolutionaries fighting in the deserts and mountains of San Luis gathered courage with a Monopolio before battle. An excerpt from a local newspaper ‘El Estandarte’ in May of 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
+Text3: During the war for Independence, revolutionaries fighting in the deserts and mountains of San Luis summoned up courage with a Monopolio before battle. An excerpt from a local newspaper ‘El Estandarte’ in May of 1911 read “revolutionaries say the only thing better than 30:30 calibre bullets is a delicious Monopolio from the Cerveceria de San Luis.”
 
 ----
 
@@ -80,8 +81,9 @@ Headline4: Baseball
 
 Text4: 
 
-Workers at the factory formed a legendary baseball team, named after their prize lager. On Sundays they paraded through town towards their home stadium opposite the brewery, on a horse-drawn carriage marked with the company seal and flag.
-**Only woman were trusted to work in the bottling room!**
+Workers at the factory formed a legendary baseball team, named after their prize lager. On Sundays they paraded through town towards their home stadium opposite the brewery, on a horse-drawn carriage marked with the company seal and flag. 
+
+**Given the cerveza’s popularity among men the decision was made to employ only women in the bottling room.**
 
 ----
 

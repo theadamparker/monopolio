@@ -6,7 +6,7 @@ Name: Lager Negra
 
 ----
 
-Description: Lager Negra A traditional Vienna-style lager. Crisp, toasted malt and rich caramel flavors, medium body, well balanced and remarkably smooth.
+Description: **Lager Negra** A traditional Vienna-style lager. Crisp, toasted malt and rich caramel flavors, medium body, well balanced and remarkably smooth.
 
 ----
 

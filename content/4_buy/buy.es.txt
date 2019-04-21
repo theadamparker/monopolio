@@ -1,12 +1,12 @@
-Title: Encuéntranos
+Title: Localizador Cerveza
 
 ----
 
-navTitle: Encuéntranos
+Navtitle: Encuéntranos
 
 ----
 
-sectionID: encuentranos
+Sectionid: encuentranos
 
 ----
 
