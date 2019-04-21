@@ -20,7 +20,6 @@ $('#under21').click(function() {
 // end age overlay scripts
 
 $('.logo').click(function() {
-  // e.preventDefault;
   $('html, body').stop().animate({
       'scrollTop': '0'
   }, 500, 'swing')
@@ -45,7 +44,6 @@ $(document).ready(function () {
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
         }, 500, 'swing', function () {
-            window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     });

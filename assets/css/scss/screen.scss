@@ -183,8 +183,8 @@ h2 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.6;
 
   .section--photoBG & {
     color: $white;
@@ -498,6 +498,7 @@ footer {
   width: 90px;
   color: red;
 	transition: .5s all ease;
+	cursor: pointer;
 
   @include mobile {
     // left: $sitePad;
