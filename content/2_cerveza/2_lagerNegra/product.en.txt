@@ -10,13 +10,12 @@ Description: Lager Negra A traditional Vienna-style lager. Crisp, toasted malt a
 
 ----
 
-ingredients: 100% Natural Ingredients
+Stats: 
+
+- 
+  ibu: 20
+  abv: 5.5
 
 ----
 
-Stats:
-
--
-  hops: Hops here
-  abv: 6
-  ibu: 40
+Ingredients: 100% Natural Ingredients

@@ -84,7 +84,9 @@
           <div class="beerStatsLockup__numberWrap">
             <div>
               <div class="beerStatsLockup__number">
-                20
+                <?php foreach ($product->stats()->yaml() as $stat): ?>
+                <?= $stat['ibu'] ?>
+                <?php endforeach ?>
               </div>
               <div class="beerStatsLockup__label">
                 IBU
@@ -101,7 +103,9 @@
             </svg>
             <div>
               <div class="beerStatsLockup__number">
-                5.0%
+                <?php foreach ($product->stats()->yaml() as $stat): ?>
+                <?= $stat['abv'] ?>%
+                <?php endforeach ?>
               </div>
               <div class="beerStatsLockup__label">
                 ABV

@@ -1,18 +1,12 @@
 label: Beer Stats
 type: structure
 fields:
-  hops:
-    label: Hop Variety
-    type: text
-    width: 1/3
+  IBU:
+    label: IBU
+    type: number
+    width: 1/2
   ABV:
     label: ABV
     type: number
     after: %
-    width: 1/3
-    translate: false
-  IBU:
-    label: IBU
-    type: number
-    width: 1/3
-    translate: false
+    width: 1/2

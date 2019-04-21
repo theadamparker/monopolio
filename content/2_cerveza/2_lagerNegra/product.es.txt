@@ -17,6 +17,5 @@ ingredients: Ingredientes 100% naturales
 Stats:
 
 -
-  hops: Hops here
-  abv: null
-  ibu: null
+  ibu: 20
+  abv: 5.5

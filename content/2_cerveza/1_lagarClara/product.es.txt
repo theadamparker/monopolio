@@ -10,12 +10,12 @@ Description: Lager Clara Una cerveza dorada estilo Pilsner elaborada originalmen
 
 ----
 
-ingredients: Ingredientes 100% naturales
+Stats: 
+
+- 
+  ibu: 35
+  abv: 5
 
 ----
-Stats:
 
--
-  hops: Test Hops
-  abv: null
-  ibu: null
+Ingredients: Ingredientes 100% naturales
