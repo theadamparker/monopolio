@@ -7,6 +7,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
+                    'assets/js/build/modernizr.js',
                     'assets/js/global/*.js', // All JS in the global folder
                     // 'assets/js/global/ga.js',
                 ],
@@ -20,21 +21,6 @@ module.exports = function(grunt) {
                 dest: 'assets/js/build/global.min.js'
             }
         },
-
-        // php: {
-        //     dist: {
-        //         options: {
-        //             port: 4000
-        //         }
-        //     }
-        // },
-
-        // open : {
-        //     dev : {
-        //         path: 'http://localhost:4000/',
-        //         app: 'Google Chrome'
-        //     }
-        // },
 
         sass: {
           dist: {
@@ -61,20 +47,22 @@ module.exports = function(grunt) {
             src: 'assets/css/screen.css'
           }
         },
-
-        modernizr: {
-          dist: {
-            "dest" : "assets/js/build/modernizr.js",
-            "parseFiles": true,
-            "tests": [
-              "cssanimations"
-            ],
-            "options": [
-              "setClasses"
-            ],
-            "uglify": true
-          }
-        },
+        // removed grunt-modernizr because it doesn't support css grid
+        // modernizr: {
+        //   dist: {
+        //     "dest" : "assets/js/build/modernizr.js",
+        //     "parseFiles": true,
+        //     "tests": [
+        //       // "cssanimations",
+        //       // "cssgrid",
+        //       // "cssgridlegacy"
+        //     ],
+        //     "options": [
+        //       "setClasses"
+        //     ],
+        //     "uglify": true
+        //   }
+        // },
 
         watch: {
             files: ['Gruntfile.js'],
@@ -101,7 +89,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
 
     // grunt.task.run('notify_hooks');
 

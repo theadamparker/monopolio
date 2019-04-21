@@ -337,6 +337,12 @@ section {
 	width: calc(100% + #{$sitePad}*2);
 	margin-left: -#{$sitePad};
 
+	.no-cssgrid &,
+	.cssgridlegacy & {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	@include extraLarge {
 		grid-auto-rows: 330px;
 	}
@@ -367,44 +373,30 @@ section {
 	}
 }
 
-.col-3-6 {
-  grid-column: span 3;
-
-	@include mobile {
-		// grid-column: span 3;
-	}
-}
-
-.col-2-6 {
-  grid-column: span 2;
-
-	@include mobile {
-		grid-column: span 1;
-	}
-}
-
-.col-2-8 {
-	grid-column: span 2;
-}
-
-.row-2 {
-  grid-row: span 2;
-}
-
 .featuredImage {
 	grid-row: span 2;
 	grid-column: span 4;
 
-	@include mobile {
-		// grid-column: span 3;
+	.no-cssgrid &,
+	.cssgridlegacy & {
+		width: 50%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 }
 
 .galleryItem {
 	grid-column: span 2;
 
-	@include mobile {
+	.no-cssgrid &,
+	.cssgridlegacy & {
+		width: 25%;
 
+		@include mobile {
+			width: 50%;
+		}
 	}
 }
 
@@ -413,6 +405,15 @@ section {
   text-align: center;
 	grid-row: span 2;
 	grid-column: span 4;
+
+	.no-cssgrid &,
+	.cssgridlegacy & {
+		width: 50%;
+
+		@include mobile {
+			width: 100%;
+		}
+	}
 
 	@include mobile {
 		padding-left: 10px;
@@ -571,6 +572,7 @@ footer {
 			position: absolute;
 			opacity: 0;
 			left: 0;
+			z-index: -1;
 		}
 
 		&.active {
