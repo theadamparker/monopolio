@@ -685,6 +685,28 @@ footer {
 	}
 }
 
+.locked .transparent .languageSelect .active {
+	a {
+		&:link,
+		&:active,
+		&:visited,
+		&:hover {
+			color: $teal;
+		}
+	}
+}
+
+.transparent .languageSelect .active {
+	a {
+		&:link,
+		&:active,
+		&:visited,
+		&:hover {
+			color: $red;
+		}
+	}
+}
+
 .transparent,
 .ageOverlay {
 	.languageSelect li {
@@ -692,15 +714,6 @@ footer {
 
 		&.active {
 			background: $white;
-
-			a {
-				&:link,
-				&:active,
-				&:visited,
-				&:hover {
-					color: $red;
-				}
-			}
 		}
 
 		&::before {
