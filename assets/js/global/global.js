@@ -1,5 +1,12 @@
 // global scripts
 
+// mobile nav
+
+$('#mobileNavButton').click(function() {
+  $(this).toggleClass('active');
+  $('.mainNav').toggleClass('open')
+})
+
 // Age overlay scripts
 
 $(document).ready(function () {

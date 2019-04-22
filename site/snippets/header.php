@@ -32,7 +32,7 @@
       <a class="logo">
         <img src="<?= $site->url() ?>/assets/img/mono-logo.png" alt="<?= $site->title() ?>" />
       </a>
-
+      <div id="mobileNavButton">&#9776;</div>
       <nav id="mainNav" class="mainNav">
         <?php foreach ($site->children()->listed() as $item): ?>
         <a href="#<?= $item->sectionID() ?>">

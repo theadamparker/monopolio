@@ -556,6 +556,29 @@ footer {
 	}
 }
 
+#mobileNavButton {
+	display: none;
+
+	.transparent & {
+		@include mobile {
+			color: $white;
+		}
+	}
+
+	@include mobile {
+		color: $teal;
+		font-size: 40px;
+		display: block;
+		position: absolute;
+		right: $sitePad;
+		z-index: 3;
+	}
+
+	&.active {
+		color: $teal;
+	}
+}
+
 .mainNav {
   display: flex;
   // width: 80%;
@@ -564,7 +587,24 @@ footer {
 	margin: 10px auto 0;
 
 	@include mobile {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		width: 0%;
+		height: 100vh;
+		background: $white;
+		position: absolute;
+		top: -10px;
+		right: -#{$sitePad};
+		padding-left: $sitePad;
+		padding-top: 60px;
+		justify-content: unset;
+		transition: .5s all ease;
+
+		&.open {
+			width: 40%;
+			right: 0;
+			box-shadow: -3px 0px 5px rgba(0,0,0,.1);
+		}
 	}
 
 	a {
@@ -572,6 +612,11 @@ footer {
 		transition: .3s all ease;
 		letter-spacing: 2px;
 		position: relative;
+
+		@include mobile {
+			margin-bottom: 30px;
+		}
+
 
 		&::after,
 		&::before {
@@ -607,6 +652,10 @@ footer {
 			&:active,
 			&:visited {
 				color: $teal;
+
+				// @include mobile {
+				// 	color: $white;
+				// }
 			}
 		}
 
@@ -615,6 +664,10 @@ footer {
 		&:visited {
 			text-decoration: none;
 			color: $teal;
+
+			// @include mobile {
+			// 	color: $white;
+			// }
 		}
 
 		&:hover {
@@ -635,6 +688,10 @@ footer {
 	&:active,
 	&:visited {
 		color: $white;
+
+		@include mobile {
+			color: $teal;
+		}
 	}
 }
 
@@ -689,6 +746,7 @@ footer {
 	}
 }
 
+// age gate page
 .locked .transparent .languageSelect .active {
 	a {
 		&:link,
@@ -701,6 +759,7 @@ footer {
 	}
 }
 
+// top of home page
 .transparent .languageSelect .active {
 	a {
 		&:link,
@@ -735,6 +794,17 @@ footer {
 	}
 }
 
+.transparent .mainNav a {
+	&:link,
+	&:active,
+	&:visited,
+	&:hover {
+		@include mobile {
+			color: $teal;
+		}
+	}
+}
+
 .ageOverlay .languageSelect {
 	margin: 10px;
 }
@@ -745,7 +815,7 @@ footer {
 	align-items: center;
 
 	@include mobile {
-
+		display: none;
 	}
 }
 
