@@ -6,16 +6,16 @@ Name: Lager Negra
 
 ----
 
-Description: Lager Negra Una cerveza lager al estilo tradicional de Viena. Crujiente, malta tostada y ricos sabores a caramelo, cuerpo medio, bien equilibrado y notablemente suave.
+Description: Una cerveza lager al estilo tradicional de Viena. Crujiente, malta tostada y ricos sabores a caramelo, cuerpo medio, bien equilibrado y notablemente suave. **ABV: 5.5%**
 
 ----
 
-ingredients: Ingredientes 100% naturales
+Stats: 
 
-----
-
-Stats:
-
--
+- 
   ibu: 20
   abv: 5.5
+
+----
+
+Ingredients: Ingredientes 100% naturales
