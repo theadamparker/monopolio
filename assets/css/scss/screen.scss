@@ -696,7 +696,7 @@ footer {
 		&:visited,
 		&:hover {
 			color: #547489; // this is sky blue
-			
+
 		}
 	}
 }
@@ -955,7 +955,7 @@ option {
 .ageOverlay__button {
 	font-size: 20px;
 	border: 3px solid $white;
-	padding: 10px;
+	padding: 10px 10px 6px; // less padding bottom to visually center the text
 	flex: 1;
 	margin: 10px;
 	color: $white;
