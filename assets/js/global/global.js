@@ -25,6 +25,8 @@ $('.logo').click(function() {
   }, 500, 'swing')
 })
 
+var offset = -40; // for jump links
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
@@ -42,7 +44,7 @@ $(document).ready(function () {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
+            'scrollTop': $target.offset().top+offset
         }, 500, 'swing', function () {
             $(document).on("scroll", onScroll);
         });
@@ -55,7 +57,7 @@ function onScroll(event){
     $('.mainNav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top <= (scrollPos - offset) && (refElement.position().top + refElement.height() + offset) > scrollPos) {
             $('.mainNav a').removeClass("active");
             currLink.addClass("active");
         }
@@ -64,7 +66,7 @@ function onScroll(event){
         }
     });
 
-    if(scrollPos > ourBeers.position().top) {
+    if(scrollPos > (ourBeers.position().top + offset - 1)) {
       $('.header').removeClass('transparent')
     } else {
       $('.header').addClass('transparent')

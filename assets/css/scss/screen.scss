@@ -158,7 +158,6 @@ h1 {
     font-size: 45px;
 		margin-bottom: 0;
     color: $white;
-		text-shadow: 2px 2px 5px rgba(0,0,0,.3);
   }
 }
 
@@ -309,6 +308,11 @@ section {
   align-items: center;
 }
 
+#story {
+	background-position: left top;
+	align-items: self-start;
+}
+
 .section--fullBleed {
 	width: calc(100% + #{$sitePad}*2);
 	// width: 100vw;
@@ -318,7 +322,7 @@ section {
 
 .sectionHeader {
 	background: $teal;
-	padding: 40px $sitePad 20px;
+	padding: 60px $sitePad 40px;
 	margin-bottom: 0;
 	text-align: center;
 }
