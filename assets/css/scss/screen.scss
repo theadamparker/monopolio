@@ -559,6 +559,10 @@ footer {
 #mobileNavButton {
 	display: none;
 
+	.locked & {
+		display: none;
+	}
+
 	.transparent & {
 		@include mobile {
 			color: $white;
