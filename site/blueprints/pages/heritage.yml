@@ -44,12 +44,9 @@ fields:
     label: Text
     type: textarea
     size: small
-  cover4:
-    extends: fields/cover
-  headline4:
-    label: Headline
-    type: text
-  text4:
-    label: Text
+  text4bottom:
+    label: Text, bottom half
     type: textarea
     size: small
+  cover4:
+    extends: fields/cover

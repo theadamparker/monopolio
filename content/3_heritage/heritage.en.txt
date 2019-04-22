@@ -79,17 +79,17 @@ Headline4: Baseball
 
 ----
 
-Text4: 
-
-Workers at the factory formed a legendary baseball team, named after their prize lager. On Sundays they paraded through town towards their home stadium opposite the brewery, on a horse-drawn carriage marked with the company seal and flag. 
-
-**Given the cerveza’s popularity among men the decision was made to employ only women in the bottling room.**
+Text4: Workers at the factory formed a legendary baseball team, named after their prize lager. On Sundays they paraded through town towards their home stadium opposite the brewery, on a horse-drawn carriage marked with the company seal and flag.
 
 ----
 
 Cover4: 
 
 - 3-tradition-feature-4.jpg
+
+----
+
+Text4bottom: **Given the cerveza’s popularity among men the decision was made to employ only women in the bottling room.**
 
 ----
 
