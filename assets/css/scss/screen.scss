@@ -146,12 +146,16 @@ body {
 
 h1 {
   font-size: 40px;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: 500;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-	hyphens: auto;
+	hyphens: none;
+
+	@include mobile {
+		font-size: 30px;
+	}
 
   .section--photoBG & {
 		letter-spacing: 5px;
